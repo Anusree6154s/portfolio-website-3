@@ -1,0 +1,39 @@
+{
+  "frontend": [
+    "JavaScript",
+    "React",
+    "Redux",
+    "Next.js",
+    "jQuery",
+    "MUI",
+    "Tailwind",
+    "Bootstrap",
+    "HTML",
+    "CSS",
+    "Figma"
+  ],
+  "backend": [
+    "NodeJS",
+    "ExpressJS",
+    "MongoDB",
+    "Mongoose",
+    "JWT",
+    "OAuth",
+    "Microservices",
+    "OpenID Connect",
+    "Express Session"
+  ],
+  "tools_and_utilities": [
+    "Git",
+    "Linux",
+    "CI/CD",
+    "Redis",
+    "Postman",
+    "Swagger",
+    "Cypress",
+    "Jest",
+    "Puppeteer",
+    "CORS",
+    "Nodemailer"
+  ]
+}

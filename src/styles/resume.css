@@ -1,0 +1,18 @@
+
+
+
+#resume {
+  background-color: #212121;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+
+  .resume-inner {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+}

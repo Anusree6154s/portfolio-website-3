@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+body {
+  overflow: hidden;
+  animation: overflow-visible 0.2s 3.4s ease forwards;
+}
+
+#home {
+  height: 100%;
+  background-color: white;
+  position: relative;
+
+  .landing {
+    padding-top: 12vh;
+    height: 150vh;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: clip;
+    animation: overflow-auto 0s 2s; */
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      width: 80%;
+
+      .heading-inner {
+        color: black;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Clash Display";
+        /* margin-bottom: 30%; */
+
+        .title {
+          overflow: hidden;
+
+          .title-inner {
+            font-size: 600%;
+            font-weight: bolder;
+            transform: translate(0%, 100%);
+            animation: slide-up 0.5s ease 4s forwards;
+
+            span:nth-child(1) {
+              margin-right: 30px;
+            }
+          }
+        }
+
+        .sub-title {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+          .sub-title-inner-1 {
+            overflow: hidden;
+            /* border: 1px solid green; */
+            width: 9%;
+            height: 50px;
+            /* transform: translate(100%); */
+            display: inline-block;
+            position: relative;
+
+            .sub-title-inner-2 {
+              font-weight: 500;
+              text-transform: uppercase;
+              position: absolute;
+              font-size: 120%;
+              width: 100px;
+              height: 100px;
+              /* top: 0%; */
+              transform: translate(-100%, 0%);
+              animation: slide-up 0.5s ease 4.5s forwards;
+
+              .dot {
+                position: absolute;
+                color: orange;
+                margin-left: 2px;
+                font-size: 100%;
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .tag-line {
+        width: 60%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.447);
+        font-family: "Clash Display";
+        font-size: large;
+        opacity: 0;
+        transform: translate(0%, 10%);
+
+        animation: fade-in 0.2s ease 5.4s forwards,
+          slide-up 0.2s ease 5.4s forwards;
+      }
+    }
+
+    .projects-showcase {
+      width: 100%;
+      height: max-content;
+      /* position: absolute;
+      bottom: 0px;
+      transform: translate(0%, 100%); */
+
+      .projects-showcase-inner {
+        animation: grow 1ms linear both;
+        animation-timeline: view(block 100px 10px);
+
+        display: flex;
+        height: 300px;
+        background-color: #e91e63;
+        border: 20px solid #e91e63;
+        border-top: none;
+        border-bottom: none;
+        padding: 0px 60px;
+        border-radius: 50px;
+        overflow: clip;
+        /* margin-top: 5%; */
+
+        .track {
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+
+          &:nth-child(1),
+          &:nth-child(3) {
+            transform: translate(0%, -100%);
+            animation: slide-up 1ms linear both;
+            animation-timeline: view(y 50% 30%);
+          }
+
+          &:nth-child(2) {
+            animation: slide-down 1ms linear both;
+            animation-timeline: view(y 50% 30%);
+          }
+        }
+
+        img {
+          height: 100%;
+          width: 90%;
+          /* border-radius: 10px; */
+          /* background-color: white;
+          padding: 10px; */
+        }
+      }
+    }
+  }
+
+  .about {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5%;
+
+    .heading {
+      overflow: clip;
+      .heading-inner {
+        font-size: 500%;
+        font-family: "Clash Display";
+        font-weight: 500;
+        transform: translate(0%, 100px);
+        animation: slide-up 1ms linear both;
+        animation-timeline: view(block 50% 20%);
+      }
+    }
+
+    .content {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      padding: 0% 10%;
+
+      opacity: 0;
+      animation: fade-in 1ms linear both;
+      animation-timeline: view(block 90% 10%);
+
+      .img {
+        width: 250px;
+        height: 250px;
+        padding: 1%;
+        border: 2px solid transparent;
+        --border-angle: 0turn;
+        background: conic-gradient(
+              from var(--border-angle),
+              #000000,
+              #000000 5%,
+              #000000 60%,
+              #000000 95%
+            )
+            padding-box,
+          conic-gradient(
+              from var(--border-angle),
+              transparent 15%,
+              #08e199 35%,
+              transparent 65%,
+              #08e199 95%,
+              transparent
+            )
+            border-box,
+          conic-gradient(
+              from var(--border-angle),
+              #000000,
+              #000000 5%,
+              #000000 60%,
+              #000000 95%
+            )
+            border-box;
+        animation: bg-spin 30s linear infinite;
+
+        animation-timeline: auto;
+
+        .img-inner {
+          overflow: hidden;
+          img {
+            object-fit: fill;
+            object-position: center top;
+            transform: scale(1.3) translateY(10px);
+          }
+        }
+      }
+
+      .text {
+        width: 50%;
+        font-family: "Satoshi";
+        color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          color: #08e199;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .techstack {
+    background-color: black;
+    color: #08e199;
+    width: 100%;
+    padding: 5% 0%;
+    overflow: clip;
+
+    .techstack-inner {
+      animation: slide-down-far 0.2s linear forwards;
+      animation-timeline: view(block 0 80%);
+    }
+
+    .track {
+      height: max-content;
+      width: max-content;
+      display: flex;
+      gap: 20px;
+      font-size: 400%;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-family: "Big Shoulders Display";
+      line-height: 70%;
+      padding-top: 3%;
+
+      .diamond {
+        font-size: 40%;
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        opacity: 0;
+        animation: slide-left 25s linear infinite, fade-in 0.2s ease forwards;
+        animation-timeline: auto, view(block 50% 10%);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: #08e199;
+        animation: slide-right 25s linear infinite, fade-in 0.2s ease forwards;
+        animation-timeline: auto, view(block 50% 10%);
+        text-align: right;
+        transform: translateX(-50%);
+      }
+
+      * {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+  .projects {
+    background-color: white;
+    color: black;
+    padding: 5% 0% 8% 0%;
+    display: flex;
+    justify-content: center;
+
+    .projects-inner {
+      width: 80%;
+      display: grid;
+      gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+
+      .heading-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        height: 30vh;
+
+        .heading {
+          overflow: clip;
+          height: max-content;
+          line-height: 400%;
+
+          .heading-inner {
+            font-size: 400%;
+            font-family: "Clash Display";
+            font-weight: 500;
+            transform: translate(0%, 100px);
+            animation: slide-up 1ms linear both;
+          }
+
+          &:nth-child(1) .heading-inner {
+            animation-timeline: view(block 70% 10%);
+          }
+
+          &:nth-child(2) .heading-inner {
+            animation-timeline: view(block 80% 10%);
+          }
+        }
+      }
+
+      .description-wrapper {
+        height: 30vh;
+
+        .description {
+          color: rgba(0, 0, 0, 0.5);
+          overflow: clip;
+          text-align: right;
+          font-family: "Clash Display";
+
+          .description-inner {
+            transform: translate(0%, 200px);
+            animation: slide-up 1ms linear both;
+            animation-timeline: view(block 70% 10%);
+          }
+        }
+      }
+
+      .project-items {
+        width: 100%;
+        height: 70vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* opacity: 0; */
+        /* animation: fade-in 1ms linear both;
+        animation-timeline: view(block 95% 0); */
+        padding-top: 30px;
+        /* overflow: clip; */
+        cursor: pointer;
+        transition: transform 0.5s ease;
+
+        .title,
+        .techstack,
+        .img {
+          overflow: clip;
+        }
+
+        .title-inner,
+        .techstack-inner {
+          transform: translateY(100%);
+          animation: slide-up 1ms linear both;
+        }
+
+        .title-inner {
+          animation-timeline: view(block 80% 10%);
+        }
+        .techstack-inner {
+          animation-timeline: view(block 60% 10%);
+        }
+        .img-inner {
+          transform: translateY(30%);
+          animation: slide-up 1ms linear both;
+          animation-timeline: view(block 100% 10%);
+        }
+
+        .title {
+          font-family: "Clash Display";
+        }
+
+        .techstack {
+          font-family: "Satoshi";
+          background-color: transparent;
+          padding: 0px;
+          font-weight: 600;
+
+          .techstack-inner {
+            display: flex;
+            gap: 10px;
+          }
+        }
+
+        &:nth-child(3),
+        &:nth-child(6) {
+          background-color: black;
+          .techstack {
+            color: #e91e63;
+          }
+        }
+        &:nth-child(4),
+        &:nth-child(5) {
+          background-color: #e91e63;
+          .techstack {
+            color: black;
+          }
+        }
+
+        .heading {
+          color: white;
+          width: 80%;
+
+          .title {
+            font-size: 300%;
+            width: 100%;
+          }
+        }
+
+        .img {
+          overflow: clip;
+          width: 80%;
+          height: 75%;
+          transition: transform 0.5s ease;
+        }
+
+        &:hover {
+          .img {
+            transform: scale(1.1);
+          }
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes circle-out {
+  to {
+    width: 1500px;
+    height: 1500px;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes shrink {
+  to {
+    background-color: white;
+    height: 10%;
+    width: max-content;
+    font-size: 300%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes change-font-size {
+  to {
+    font-size: 100%;
+  }
+}
+
+@keyframes text-change-font-color {
+  to {
+    color: black;
+    font-weight: bolder;
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: visible;
+  }
+}
+
+@keyframes portfolio-text-display {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes slide-down {
+  to {
+    transform: translate(0%, -40%);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scaleX(0.8);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes overflow-auto {
+  to {
+    overflow: visible;
+  }
+}
+
+@keyframes laser-move {
+  0% {
+    border-top-color: #08e199;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  25% {
+    border-top-color: transparent;
+    border-right-color: #08e199;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #08e199;
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #08e199;
+  }
+  100% {
+    border-top-color: #08e199;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@keyframes overflow-visible {
+  to {
+    overflow: visible;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-down-far {
+  to {
+    transform: translate(0%, 100%);
+  }
+}
