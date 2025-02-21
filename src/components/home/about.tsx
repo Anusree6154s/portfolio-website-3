@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profileImg from "@/assets/images/profile-img.png";
+// import profileImg from "/assets/images/profile-img.png";
 
 export default function About() {
   return (
@@ -11,7 +11,7 @@ export default function About() {
       <div className="content">
         <div className="img">
           <div className="img-inner">
-            <Image src={profileImg} alt="avatar" width={500} height={300} />
+            <Image src='/assets/images/profile-img.png' alt="avatar" width={500} height={300} />
           </div>
         </div>
         <div className="text">

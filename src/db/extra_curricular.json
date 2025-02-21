@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "designation": "Designer",
+      "start_date": "Oct 2020",
+      "end_date": "Mar 2021",
+      "institute": "Renesa Magazine Club",
+      "location": "Surat, India",
+      "skills": ["Adobe Photoshop", "Adobe Illustrator", "Graphic Design"]
+    },
+    {
+      "designation": "Volunteer",
+      "start_date": "Jun 2020",
+      "end_date": "Dec 2022",
+      "institute": "Edignite NGO",
+      "location": "Surat, India",
+      "skills": ["Graphic Design","Event Management", "Teaching"]
+    }
+  ]
+}

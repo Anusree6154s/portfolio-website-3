@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import projects from "@/db/projects.json";
+import mini_projects from "@/db/mini_projects.json";
 
 export default function Landing() {
   return (
@@ -44,103 +46,40 @@ export default function Landing() {
       <div className="projects-showcase">
         <div className="projects-showcase-inner">
           <div className="track">
-            <Image
-              src="https://github.com/user-attachments/assets/7558c916-e7df-4c9d-aa39-92d3e48f8f2d"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-            <Image
-              src="https://github.com/user-attachments/assets/b2f2957b-28b4-493e-b960-ed13aa7bee9b"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-
-            <Image
-              src="https://github.com/user-attachments/assets/7558c916-e7df-4c9d-aa39-92d3e48f8f2d"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-
-            <Image
-              src="https://github.com/user-attachments/assets/b2f2957b-28b4-493e-b960-ed13aa7bee9b"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
+            {projects.projects.slice(0, 3).map((item, i) => (
+              <Image
+                key={i}
+                src={item.image}
+                alt="Landscape picture"
+                layout="intrinsic"
+                width={300}
+                height={300}
+              />
+            ))}
           </div>
           <div className="track">
-            <Image
-              src="https://github.com/user-attachments/assets/68b07401-b2e6-4ebe-b2bc-ad1ce996c957"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-            <Image
-              src="https://github.com/user-attachments/assets/07637b53-e1b4-4a6e-86f4-a837ffa589bf"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-            <Image
-              src="https://github.com/user-attachments/assets/68b07401-b2e6-4ebe-b2bc-ad1ce996c957"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-            <Image
-              src="https://github.com/user-attachments/assets/07637b53-e1b4-4a6e-86f4-a837ffa589bf"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-             <Image
-              src="https://github.com/user-attachments/assets/68b07401-b2e6-4ebe-b2bc-ad1ce996c957"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
+            {projects.projects.slice(3).map((item, i) => (
+              <Image
+                key={i}
+                src={item.image}
+                alt="Landscape picture"
+                layout="intrinsic"
+                width={300}
+                height={300}
+              />
+            ))}
           </div>
           <div className="track">
-            <Image
-              src="https://github.com/user-attachments/assets/ebe87c30-8a19-496f-af77-29b552b0bdb6"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-            <Image
-              src="https://github.com/user-attachments/assets/01e12f26-2bd5-4ed2-80a5-bcefa74f9f80"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-            <Image
-              src="https://github.com/user-attachments/assets/ebe87c30-8a19-496f-af77-29b552b0bdb6"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
-            <Image
-              src="https://github.com/user-attachments/assets/01e12f26-2bd5-4ed2-80a5-bcefa74f9f80"
-              alt="Landscape picture"
-              layout="intrinsic"
-              width={500}
-              height={300}
-            />
+            {mini_projects.projects.slice(3).map((item, i) => (
+              <Image
+                key={i}
+                src={item.image}
+                alt="Landscape picture"
+                layout="intrinsic"
+                width={300}
+                height={300}
+              />
+            ))}
           </div>
         </div>
       </div>

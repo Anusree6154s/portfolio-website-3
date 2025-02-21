@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,6 +12,9 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
   mix-blend-mode: difference;
 }
 
-.color-green{
+.color-green {
   color: #01dd94;
 }
 
@@ -62,7 +63,7 @@ body {
   font-family: "Poppins";
   opacity: 1;
   overflow: hidden;
-  z-index: 2;
+  z-index: 4;
 
   animation: fade-out 1s 2.5s forwards;
 
@@ -122,13 +123,17 @@ body {
   }
 }
 
+.display-none {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 3;
   position: sticky;
   top: 0px;
   left: 0px;
@@ -143,21 +148,23 @@ nav {
     height: 70px;
     overflow: clip;
 
-    & > *:not(.name) {
+    & > * {
       cursor: pointer;
       transform: translate(0%, 300%);
-      animation: slide-up 0.5s ease 3.5s forwards;
+
       height: 100%;
       display: flex;
       align-items: center;
-      transition: color 0.2s ease;
       font-weight: 600;
+    }
+
+    & > *:not(.name) {
+      transition: color 0.2s ease;
 
       &:hover {
         color: #08e199;
       }
     }
-    
 
     & > .name {
       text-align: center;
@@ -173,10 +180,9 @@ nav {
         font-weight: lighter;
         font-family: "Splash";
         position: absolute;
-        top: 80%;
-        left: 50%;
+        top: 40%;
+        left: 8%;
         transform: translate(-50%, -50%);
-        /* color: white; */
         opacity: 0;
         transition: opacity 0.2s ease;
 
@@ -186,6 +192,22 @@ nav {
       &:hover .portfolio-text {
         opacity: 1;
       }
+    }
+  }
+}
+
+.animation-slide-up-slow {
+  .nav-inner {
+    * {
+      animation: slide-up 0.5s ease 3.2s forwards;
+    }
+  }
+}
+
+.animation-slide-up-fast {
+  .nav-inner {
+    * {
+      animation: slide-up 0.5s ease 0s forwards;
     }
   }
 }
@@ -271,5 +293,11 @@ footer {
         color: #08e199;
       }
     }
+  }
+}
+
+@keyframes slide-up {
+  to {
+    transform: translate(0%, 0%);
   }
 }

@@ -1,9 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import musicApp from "@/assets/images/music-app.png";
-import ecommerceApp from "@/assets/images/ecommerce-app.png";
-import moviesApp from "@/assets/images/movies-app.png";
-import blogApp from "@/assets/images/blog-app.png";
 
 export default function Projects() {
   return (
@@ -44,7 +40,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src={ecommerceApp}
+                src="/assets/images/ecommerce-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}
@@ -68,7 +64,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src={musicApp}
+                src="/assets/images/music-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}
@@ -93,7 +89,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src={moviesApp}
+                src="/assets/images/movies-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}
@@ -117,7 +113,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src={blogApp}
+                src="/assets/images/blog-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}

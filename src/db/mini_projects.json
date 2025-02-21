@@ -1,0 +1,122 @@
+{
+  "projects": [
+    {
+      "image": "/assets/images/mini-projects/auth-app.png",
+      "title": "Auth Application",
+      "description": "Fullstack Practise Authentication Application",
+      "techstack": [
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "TypeScript",
+        "Passport",
+        "JsonWebToken",
+        "OpenID Connect",
+        "Express Session",
+        "Redis",
+        "Nodemailer",
+        "Cors"
+      ],
+      "website": "https://auth-app-wsql.onrender.com/",
+      "github": "https://github.com/Anusree6154s/auth-app"
+    },
+    {
+      "image": "/assets/images/mini-projects/email-app.png",
+      "title": "Email Application",
+      "description": "Fullstack Email Application",
+      "techstack": [
+        "React.js",
+        "TypeScript",
+        "Chart.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Bcrypt",
+        "Mongoose"
+      ],
+      "website": "https://roc8-moonshot-assessment-frontend.vercel.app/",
+      "github": "https://github.com/Anusree6154s/roc8-moonshot-assessment"
+    },
+    {
+      "image": "/assets/images/mini-projects/qevent.png",
+      "title": "QEvent",
+      "description": "Event Booking Application Frontend",
+      "techstack": ["NextJS", "TailwindCSS", "OAuth"],
+      "website": "https://qevent-nextjs-app.vercel.app/",
+      "github": "https://github.com/Anusree6154s/qevent-nextjs-app"
+    },
+    {
+      "image": "/assets/images/mini-projects/expense-tracker.png",
+      "title": "Expense Tracker",
+      "description": "Expense Tracking Application Frontend",
+      "techstack": ["React", "Recharts"],
+      "website": "https://expense-tracker-coral-beta.vercel.app/",
+      "github": "https://github.com/Anusree6154s/expense-tracker"
+    },
+    {
+      "image": "/assets/images/mini-projects/bot-ai.png",
+      "title": "Bot AI",
+      "description": "AI Chat Application Frontend",
+      "techstack": ["ReactJS", "Material-UI", "React Context API"],
+      "website": "https://bot-ai-flame.vercel.app/",
+      "github": "https://github.com/Anusree6154s/bot-ai"
+    },
+    {
+      "image": "/assets/images/mini-projects/medify.png",
+      "title": "Medify",
+      "description": "Medical Booking Application Frontend",
+      "techstack": ["React"],
+      "website": "https://medify-chi-umber.vercel.app/",
+      "github": "https://github.com/Anusree6154s/medify"
+    },
+    {
+      "image": "/assets/images/mini-projects/task-manager.png",
+      "title": "Task Manager",
+      "description": "Fullstack Task Management Application",
+      "techstack": [
+        "React",
+        "Material-UI",
+        "Axios",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Multer"
+      ],
+      "website": "https://task-manager-five-nu.vercel.app/",
+      "github": "https://github.com/Anusree6154s/task-manager"
+    },
+    {
+      "image": "/assets/images/mini-projects/qtrip-dynamic.png",
+      "title": "Qtrip Dynamic",
+      "description": "Trip Booking Application Frontend",
+      "techstack": ["HTML", "CSS", "Bootstrap", "Javascript"],
+      "website": "https://qtrip-dynamic-lu9a.onrender.com/",
+      "github": "https://github.com/Anusree6154s/qtrip-backend"
+    },
+    {
+      "image": "/assets/images/mini-projects/qtrip-static.png",
+      "title": "Qtrip Static",
+      "description": "Trip Booking Application Frontend",
+      "techstack": ["HTML", "CSS", "Bootstrap"],
+      "website": "https://anilkumaranusree113-me-qtripstatic-lsnral4u2.vercel.app/",
+      "github": "https://gitlab.crio.do/COHORT_ME_QTRIPSTATIC_ENROLL_1711533245835/anilkumaranusree113-ME_QTRIPSTATIC"
+    },
+    {
+      "image": "/assets/images/mini-projects/xboard.png",
+      "title": "XBoard",
+      "description": "News Application Frontend",
+      "techstack": ["HTML", "CSS", "Bootstrap", "Javascript", "Figma"],
+      "website": "https://xboard-buildout-crio.netlify.app/",
+      "github": "https://gitlab.crio.do/COHORT_ME_BUILDOUT_XBOARD_ENROLL_1714374400644/anilkumaranusree113-ME_BUILDOUT_XBOARD"
+    },
+    {
+      "image": "/assets/images/mini-projects/xcruise.png",
+      "title": "XCruise",
+      "description": "Cruise Booking Application Frontend",
+      "techstack": ["HTML", "CSS"],
+      "website": "https://xcruise-buildout-crio.netlify.app/",
+      "github": "https://gitlab.crio.do/COHORT_ME_FE_BUILDOUT_XCRUISE_ENROLL_1709031360235/anilkumaranusree113-ME_FE_BUILDOUT_XCRUISE"
+    }
+  ]
+}

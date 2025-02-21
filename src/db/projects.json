@@ -1,0 +1,81 @@
+{
+  "projects": [
+    {
+      "image": "/assets/images/projects/ebazar.png",
+      "title": "Ebazar",
+      "description": "Fullstack E-Commerce Application",
+      "techstack": [
+        "ReactJS",
+        "Redux Toolkit",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB Atlas",
+        "JWT"
+      ],
+      "website": "https://ebazar-fullstack.vercel.app/home",
+      "github": "https://github.com/Anusree6154s/ebazar-vercel"
+    },
+    {
+      "image": "/assets/images/projects/movies-app.png",
+      "title": "XFlix",
+      "description": "Fullstack Video Streaming Platform",
+      "techstack": [
+        "React.js",
+        "Context API",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Vercel"
+      ],
+      "website": "https://xflix-frontend-hazel.vercel.app/",
+      "github": "https://github.com/Anusree6154s/xflix-frontend"
+    },
+    {
+      "image": "/assets/images/projects/qkart-backend.png",
+      "title": "QKart Backend",
+      "description": "E-Commerce Platform Backend",
+      "techstack": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Joi",
+        "JWT",
+        "Jest"
+      ],
+      "website": "https://qkart-backend-2-jlz8.onrender.com/v1/swagger/docs",
+      "github": "https://github.com/Anusree6154s/qkart-backend"
+    },
+    {
+      "image": "/assets/images/projects/music-app.png",
+      "title": "QTify Frontend",
+      "description": "Music Application Frontend",
+      "techstack": [
+        "React.js",
+        "Material-UI",
+        "Swiper.js",
+        "REST APIs",
+        "Vercel"
+      ],
+      "website": "https://qtify-ten-gamma.vercel.app/",
+      "github": "https://github.com/Anusree6154s/qtify-frontend"
+    },
+    {
+      "image": "/assets/images/projects/ecommerce-app.png",
+      "title": "QKart Frontend",
+      "description": "E-Commerce Platform Frontend",
+      "techstack": ["React.js", "Material UI", "REST APIs", "Render", "Vercel"],
+      "website": "https://qkart-frontend-01.vercel.app/",
+      "github": "https://github.com/Anusree6154s/qkart-frontend"
+    },
+    {
+      "image": "/assets/images/blog-app.png",
+      "title": "Personal Blog",
+      "description": "Blog Application Frontend",
+      "techstack": ["Jekyll", "SCSS", "Github Pages"],
+      "website": "https://anusree6154s.github.io/documentation/",
+      "github": "https://github.com/Anusree6154s/documentation"
+    }
+  ]
+}

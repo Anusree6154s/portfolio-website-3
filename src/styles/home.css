@@ -149,14 +149,11 @@ body {
             animation: slide-down 1ms linear both;
             animation-timeline: view(y 50% 30%);
           }
-        }
 
-        img {
-          height: 100%;
-          width: 90%;
-          /* border-radius: 10px; */
-          /* background-color: white;
-          padding: 10px; */
+          img {
+            height: 100%;
+            width: 90%;
+          }
         }
       }
     }

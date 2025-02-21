@@ -4,7 +4,7 @@
 @import url("https://fonts.cdnfonts.com/css/satoshi");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
 
-.welcome {
+/* .welcome {
   display: none;
 }
 
@@ -14,7 +14,7 @@ nav .nav-inner > :not(.name) {
 
 :is(footer .contact, footer .socials) * {
   background-color: transparent;
-}
+} */
 
 #contact {
   background-color: white;
@@ -28,6 +28,10 @@ nav .nav-inner > :not(.name) {
   align-items: center;
   padding: 8% 8% 10% 8%;
   font-family: "Satoshi";
+
+  * {
+    animation: slide-up-initial 1s ease, fade-in 1s ease;
+  }
 
   .contact-inner {
     width: 80%;
@@ -103,5 +107,23 @@ nav .nav-inner > :not(.name) {
 @keyframes slide-up {
   to {
     transform: translate(0%, 0%);
+  }
+}
+
+@keyframes slide-up-initial {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-in-initial {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
