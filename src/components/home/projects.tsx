@@ -42,7 +42,6 @@ export default function Projects() {
               <Image
                 src="/assets/images/projects/ecommerce-app.png"
                 alt="Landscape picture"
-                layout="intrinsic"
                 width={500}
                 height={300}
               />
@@ -66,7 +65,6 @@ export default function Projects() {
               <Image
                 src="/assets/images/projects/music-app.png"
                 alt="Landscape picture"
-                layout="intrinsic"
                 width={500}
                 height={300}
               />
@@ -91,7 +89,6 @@ export default function Projects() {
               <Image
                 src="/assets/images/projects/movies-app.png"
                 alt="Landscape picture"
-                layout="intrinsic"
                 width={500}
                 height={300}
               />
@@ -115,7 +112,6 @@ export default function Projects() {
               <Image
                 src="/assets/images/projects/blog-app.png"
                 alt="Landscape picture"
-                layout="intrinsic"
                 width={500}
                 height={300}
               />

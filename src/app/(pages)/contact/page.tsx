@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <div id="contact">
-      {/* <p className="title">Contact</p> */}
       <div className="contact-inner">
         <div className="hardcoded">
           <div className="title">

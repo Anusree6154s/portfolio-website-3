@@ -1,16 +1,28 @@
-import Landing from "@/components/home/landing";
-import About from "@/components/home/about";
-import Projects from "@/components/home/projects";
-import TechStack from "@/components/home/techstack";
-import "@/styles/home.css";
+"use client";
+import { usePathname, useRouter } from "next/navigation";
+import React, { useEffect } from "react";
+import "@/styles/welcome.css";
 
-export default function Home() {
+export default function Welcome() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  useEffect(() => {
+    console.log(window.innerWidth, "px");
+    setTimeout(() => {
+      router.push("/home");
+    }, 2500);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <main id="home">
-      <Landing />
-      <About />
-      <TechStack />
-      <Projects />
-    </main>
+    <div className={pathname === "/" ? "welcome" : "display-none"}>
+      <div className="welcome-inner">
+        <p className="first-name">Anusree</p>
+        <p className="last-name">Anilkumar</p>
+        <p className="portfolio-text">Portfolio</p>
+      </div>
+      <div className="bg-circle"></div>
+    </div>
   );
 }

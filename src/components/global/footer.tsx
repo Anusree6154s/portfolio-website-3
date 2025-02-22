@@ -1,17 +1,17 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Footer() {
-  const [isMounted, setIsMounted] = useState(false);
+  // const [isMounted, setIsMounted] = useState(false);
 
-  // Only run this after hydration is complete
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  // // Only run this after hydration is complete
+  // useEffect(() => {
+  //   setIsMounted(true);
+  // }, []);
 
   return (
     <footer>
-      {isMounted && (
+      {/* {isMounted && ( */}
         <div className="footer-inner">
           <div className="contact">
             <div className="list">
@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      )}
+      {/* )} */}
     </footer>
   );
 }

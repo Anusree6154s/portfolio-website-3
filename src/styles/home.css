@@ -4,27 +4,28 @@
 @import url("https://fonts.cdnfonts.com/css/satoshi");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
 
-body {
-  overflow: hidden;
-  animation: overflow-visible 0.2s 3.4s ease forwards;
-}
-
 #home {
-  height: 100%;
+  height: max-content;
   background-color: white;
   position: relative;
 
   .landing {
-    padding-top: 12vh;
-    height: 150vh;
+    padding-top: 50px;
+    height: 750px;
     position: relative;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* overflow: clip;
-    animation: overflow-auto 0s 2s; */
+
+    @media (max-width: 940px) {
+      height: 650px;
+    }
+
+    @media (max-width: 660px) {
+      height: 800px;
+    }
 
     .heading {
       display: flex;
@@ -43,6 +44,14 @@ body {
         font-family: "Clash Display";
         /* margin-bottom: 30%; */
 
+        @media (max-width: 660px) {
+          gap: 20px;
+        }
+
+        @media (max-width: 400px) {
+          width: 80%;
+        }
+
         .title {
           overflow: hidden;
 
@@ -50,10 +59,34 @@ body {
             font-size: 600%;
             font-weight: bolder;
             transform: translate(0%, 100%);
-            animation: slide-up 0.5s ease 4s forwards;
+            animation: slide-up 0.5s ease 1s forwards;
 
             span:nth-child(1) {
               margin-right: 30px;
+            }
+
+            @media (max-width: 940px) {
+              font-size: 500%;
+            }
+
+            @media (max-width: 780px) {
+              font-size: 400%;
+            }
+
+            @media (max-width: 660px) {
+              line-height: 100%;
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+              font-size: 500%;
+            }
+
+            @media (max-width: 430px) {
+              font-size: 400%;
+            }
+
+            @media (max-width: 350px) {
+              font-size: 300%;
             }
           }
         }
@@ -63,14 +96,26 @@ body {
           display: flex;
           justify-content: space-around;
 
+          @media (max-width: 430px) {
+            width: 80%;
+          }
+
+          @media (max-width: 400px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+          }
+
           .sub-title-inner-1 {
             overflow: hidden;
             /* border: 1px solid green; */
-            width: 9%;
+            width: 100px;
             height: 50px;
-            /* transform: translate(100%); */
             display: inline-block;
             position: relative;
+
+            @media (max-width: 400px) {
+              width: 110px;
+            }
 
             .sub-title-inner-2 {
               font-weight: 500;
@@ -81,7 +126,7 @@ body {
               height: 100px;
               /* top: 0%; */
               transform: translate(-100%, 0%);
-              animation: slide-up 0.5s ease 4.5s forwards;
+              animation: slide-up 0.5s ease 1.5s forwards;
 
               .dot {
                 position: absolute;
@@ -90,6 +135,16 @@ body {
                 font-size: 100%;
                 top: 4px;
               }
+
+              @media (max-width: 940px) {
+                font-size: 90%;
+              }
+
+              @media (max-width: 400px) {
+                font-size: 110%;
+              }
+
+              
             }
           }
         }
@@ -104,8 +159,8 @@ body {
         opacity: 0;
         transform: translate(0%, 10%);
 
-        animation: fade-in 0.2s ease 5.4s forwards,
-          slide-up 0.2s ease 5.4s forwards;
+        animation: fade-in 0.2s ease 2.4s forwards,
+          slide-up 0.2s ease 2.4s forwards;
       }
     }
 
@@ -129,7 +184,10 @@ body {
         padding: 0px 60px;
         border-radius: 50px;
         overflow: clip;
-        /* margin-top: 5%; */
+
+        @media (max-width: 500px) {
+          padding: 0px;
+        }
 
         .track {
           height: 400px;
@@ -154,13 +212,23 @@ body {
             height: 100%;
             width: 90%;
           }
+
+          @media (max-width: 500px) {
+            &:nth-child(3) {
+              display: none;
+            }
+          }
         }
       }
     }
   }
 
   .about {
-    height: 100vh;
+    * {
+      animation: slide-up-initial 1s ease, fade-in-initial 1s ease;
+    }
+
+    height: 550px;
     width: 100%;
     background-color: black;
     color: white;
@@ -171,6 +239,22 @@ body {
     gap: 20px;
     padding: 5%;
 
+    @media (max-width: 940px) {
+      height: 600px;
+    }
+
+    @media (max-width: 740px) {
+      height: 700px;
+    }
+
+    @media (max-width: 780px) {
+      height: 750px;
+    }
+
+    @media (max-width: 660px) {
+      height: 850px;
+    }
+
     .heading {
       overflow: clip;
       .heading-inner {
@@ -180,6 +264,14 @@ body {
         transform: translate(0%, 100px);
         animation: slide-up 1ms linear both;
         animation-timeline: view(block 50% 20%);
+
+        @media (max-width: 440px) {
+          font-size: 400%;
+        }
+
+        @media (max-width: 350px) {
+          font-size: 300%;
+        }
       }
     }
 
@@ -194,9 +286,18 @@ body {
       animation: fade-in 1ms linear both;
       animation-timeline: view(block 90% 10%);
 
+      @media (max-width: 780px) {
+        flex-direction: column;
+      }
+
       .img {
         width: 250px;
         height: 250px;
+        @media (max-width: 300px) {
+          width: 150px;
+          height: 150px;
+        }
+
         padding: 1%;
         border: 2px solid transparent;
         --border-angle: 0turn;
@@ -247,6 +348,10 @@ body {
         flex-direction: column;
         gap: 20px;
 
+        @media (max-width: 780px) {
+          width: 100%;
+        }
+
         span {
           color: #08e199;
           font-weight: bold;
@@ -256,10 +361,14 @@ body {
   }
 
   .techstack {
+    * {
+      animation: slide-up-initial 1s ease, fade-in-initial 1s ease;
+    }
+
     background-color: black;
     color: #08e199;
     width: 100%;
-    padding: 5% 0%;
+    padding-bottom: 30px;
     overflow: clip;
 
     .techstack-inner {
@@ -310,6 +419,10 @@ body {
   }
 
   .projects {
+    * {
+      animation: slide-up-initial 1s ease, fade-in-initial 1s ease;
+    }
+
     background-color: white;
     color: black;
     padding: 5% 0% 8% 0%;
@@ -322,11 +435,35 @@ body {
       gap: 40px;
       grid-template-columns: repeat(2, 1fr);
 
+      @media (max-width: 780px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+
+      @media (max-width: 660px) {
+        gap: 60px;
+      }
+
       .heading-wrapper {
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        height: 30vh;
+        height: 150px;
+
+        @media (max-width: 780px) {
+          gap: 20px;
+          flex-direction: row;
+          height: 60px;
+        }
+
+        @media (max-width: 580px) {
+          flex-direction: column;
+          height: 100px;
+          align-items: center;
+          line-height: 80%;
+        }
 
         .heading {
           overflow: clip;
@@ -339,6 +476,10 @@ body {
             font-weight: 500;
             transform: translate(0%, 100px);
             animation: slide-up 1ms linear both;
+
+            @media (max-width: 300px) {
+              font-size: 300%;
+            }
           }
 
           &:nth-child(1) .heading-inner {
@@ -348,17 +489,31 @@ body {
           &:nth-child(2) .heading-inner {
             animation-timeline: view(block 80% 10%);
           }
+
+          @media (max-width: 780px) {
+            &:nth-child(2) .heading-inner {
+              animation-timeline: view(block 70% 10%);
+            }
+          }
         }
       }
 
       .description-wrapper {
-        height: 30vh;
+        height: 150px;
+
+        @media (max-width: 780px) {
+          height: 60px;
+        }
 
         .description {
           color: rgba(0, 0, 0, 0.5);
           overflow: clip;
           text-align: right;
           font-family: "Clash Display";
+
+          @media (max-width: 780px) {
+            text-align: center;
+          }
 
           .description-inner {
             transform: translate(0%, 200px);
@@ -370,7 +525,7 @@ body {
 
       .project-items {
         width: 100%;
-        height: 70vh;
+        height: 350px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -445,6 +600,18 @@ body {
           .title {
             font-size: 300%;
             width: 100%;
+
+            @media (max-width: 900px) {
+              font-size: 250%;
+            }
+
+            @media (max-width: 400px) {
+              font-size: 200%;
+            }
+
+            @media (max-width: 300px) {
+              font-size: 150%;
+            }
           }
         }
 
@@ -469,13 +636,6 @@ body {
 @keyframes slide-in {
   to {
     transform: translateY(0%);
-  }
-}
-
-@keyframes circle-out {
-  to {
-    width: 1500px;
-    height: 1500px;
   }
 }
 
@@ -520,12 +680,6 @@ body {
 @keyframes remove-overflow {
   to {
     overflow: visible;
-  }
-}
-
-@keyframes portfolio-text-display {
-  to {
-    opacity: 1;
   }
 }
 
@@ -629,5 +783,23 @@ body {
 @keyframes slide-down-far {
   to {
     transform: translate(0%, 100%);
+  }
+}
+
+@keyframes slide-up-initial {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-in-initial {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

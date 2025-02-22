@@ -46,24 +46,20 @@ export default function Landing() {
       <div className="projects-showcase">
         <div className="projects-showcase-inner">
           <div className="track">
-            {projects.projects.slice(0, 3).map((item, i) => (
+            {projects.projects.map((item, i) => (
               <Image
                 key={i}
                 src={item.image}
                 alt="Landscape picture"
-                layout="intrinsic"
                 width={300}
                 height={300}
               />
             ))}
-          </div>
-          <div className="track">
-            {projects.projects.slice(3).map((item, i) => (
+             {projects.projects.map((item, i) => (
               <Image
                 key={i}
                 src={item.image}
                 alt="Landscape picture"
-                layout="intrinsic"
                 width={300}
                 height={300}
               />
@@ -75,7 +71,35 @@ export default function Landing() {
                 key={i}
                 src={item.image}
                 alt="Landscape picture"
-                layout="intrinsic"
+                width={300}
+                height={300}
+              />
+            ))}
+            {mini_projects.projects.slice(3).map((item, i) => (
+              <Image
+                key={i}
+                src={item.image}
+                alt="Landscape picture"
+                width={300}
+                height={300}
+              />
+            ))}
+          </div>
+          <div className="track">
+            {projects.projects.reverse().map((item, i) => (
+              <Image
+                key={i}
+                src={item.image}
+                alt="Landscape picture"
+                width={300}
+                height={300}
+              />
+            ))}
+             {projects.projects.reverse().map((item, i) => (
+              <Image
+                key={i}
+                src={item.image}
+                alt="Landscape picture"
                 width={300}
                 height={300}
               />

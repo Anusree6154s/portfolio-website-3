@@ -6,11 +6,15 @@
 
 #resume {
   background-color: #1e1e1e;
-  height: 510vh;
+  height: max-content;
   display: flex;
   justify-content: center;
   padding: 2% 0%;
   font-family: "Poppins";
+
+  @media (max-width: 1000px) {
+    height: max-content;
+  }
 
   * {
     animation: slide-up-initial 1s ease, fade-in-initial 1s ease;
@@ -21,14 +25,21 @@
     /* width: 60%; */
     display: flex;
     justify-content: center;
-    /* justify-content: space-between; */
     gap: 40px;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      /* align-items: center; */
+    }
 
     .sticky {
       display: flex;
       width: 65%;
       justify-content: flex-end;
-      width: 65%;
+
+      @media (max-width: 1000px) {
+        justify-content: center;
+        width: 100%;
+      }
 
       .sticky-inner {
         width: 50%;
@@ -38,6 +49,18 @@
         border-radius: 10px;
         height: max-content;
 
+        @media (max-width: 1160px) {
+          width: 60%;
+        }
+
+        @media (max-width: 1000px) {
+          width: 50%;
+        }
+
+        @media (max-width: 800px) {
+          width: max-content;
+        }
+
         .container {
           display: flex;
           flex-direction: column;
@@ -45,11 +68,31 @@
           gap: 20px;
           padding: 15px 20px;
 
+          @media (max-width: 1000px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+          }
+
+          @media (max-width: 800px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
           img {
             aspect-ratio: 1/1;
             background: linear-gradient(to right, #146288, #0773a8);
             border-radius: 10px;
             width: 60%;
+
+            @media (max-width: 1000px) {
+              width: 45%;
+            }
+
+            @media (max-width: 800px) {
+              width: 80%;
+            }
           }
 
           .details {
@@ -116,12 +159,14 @@
                 align-items: center;
                 color: #353535;
 
-                * {
+                a {
                   width: 20px;
                   height: 20px;
                   border: 1px solid grey;
-                  padding: 2%;
                   border-radius: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                 }
               }
             }
@@ -135,6 +180,10 @@
       display: flex;
       justify-content: flex-start;
 
+      @media (max-width: 1000px) {
+        justify-content: center;
+      }
+
       .scroll-inner {
         width: 70%;
         display: flex;
@@ -143,10 +192,23 @@
         gap: 50px;
         height: 100%;
 
+        @media (max-width: 1000px) {
+          width: 80%;
+        }
+
         .intro {
           font-size: 300%;
           font-weight: bold;
           text-transform: uppercase;
+
+          @media (max-width: 1000px) {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+          }
+
           p {
             display: flex;
             flex-direction: column;
@@ -172,6 +234,10 @@
             flex-direction: column;
             margin-top: 20px;
             width: 120%;
+
+            @media (max-width: 1000px) {
+              width: 80%;
+            }
           }
 
           .download {
@@ -201,6 +267,11 @@
               gap: 20px;
               font-weight: 200;
 
+              @media (max-width: 500px) {
+                flex-direction: column;
+                gap: 10px;
+              }
+
               .category-items {
                 font-size: 80%;
                 display: flex;
@@ -219,6 +290,10 @@
             .category:nth-child(3) {
               display: flex;
               gap: 47px;
+
+              @media (max-width: 500px) {
+                gap: 10px;
+              }
             }
           }
         }
@@ -254,11 +329,32 @@
                 justify-content: space-between;
                 gap: 10px;
 
+                @media (max-width: 1000px) {
+                  justify-content: unset;
+                }
+
+                @media (max-width: 500px) {
+                  flex-direction: column;
+                }
+
+                img {
+                  @media (max-width: 500px) {
+                    order: 2;
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 1/1;
+                  }
+                }
+
                 .details {
                   font-weight: 200;
                   display: flex;
                   flex-direction: column;
                   gap: 5px;
+                  @media (max-width: 500px) {
+                    order: 3;
+                    align-self: flex-start;
+                  }
 
                   .item-description,
                   .item-techstack {
@@ -282,6 +378,16 @@
 
                 .item-arrow-container {
                   height: 80px;
+
+                  @media (max-width: 1000px) {
+                    margin-left: auto;
+                  }
+
+                  @media (max-width: 500px) {
+                    order: 1;
+                    align-self: flex-end;
+                    height: max-content;
+                  }
 
                   .item-arrow {
                     color: rgb(0, 166, 255);
@@ -319,12 +425,18 @@
               display: flex;
               gap: 20px;
 
+              @media (max-width: 500px) {
+                flex-direction: column;
+              }
+
               .logo {
                 border-radius: 50px;
                 height: 40px;
                 width: 40px;
                 background-color: #0773a8;
-                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
               }
 
               .details {
@@ -381,12 +493,18 @@
                 display: flex;
                 gap: 20px;
 
+                @media (max-width: 500px) {
+                  flex-direction: column;
+                }
+
                 .logo {
                   border-radius: 50px;
                   height: 40px;
                   width: 40px;
                   background-color: #0773a8;
-                  padding: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
                 }
 
                 .details {
