@@ -8,7 +8,6 @@ export default function Welcome() {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(window.innerWidth, "px");
     setTimeout(() => {
       router.push("/home");
     }, 2500);
@@ -20,8 +19,9 @@ export default function Welcome() {
       <div className="welcome-inner">
         <p className="first-name">Anusree</p>
         <p className="last-name">Anilkumar</p>
-        <p className="portfolio-text">Portfolio</p>
+        {/* <p className="portfolio-text">Portfolio</p> */}
       </div>
+      <p className="portfolio-text">Portfolio</p>
       <div className="bg-circle"></div>
     </div>
   );
