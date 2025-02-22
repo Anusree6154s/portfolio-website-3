@@ -1,28 +1,29 @@
 import React from "react";
-import "@/styles/projects.css";
+import styles from "@/styles/projects.module.scss";
 import projects from "@/db/projects.json";
 import mini_projects from "@/db/mini_projects.json";
 import Image from "next/image";
 import Link from "next/link";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Projects() {
   return (
-    <div id="projects">
-      <div className="projects-inner">
-        <div className="major-projects">
-          <p className="title">Projects</p>
-          <div className="content">
+    <div className={styles.projects}>
+      <div className={styles["projects-inner"]}>
+        <div className={styles["major-projects"]}>
+          <p className={styles.title}>Projects</p>
+          <div className={styles.content}>
             {projects.projects.map((item, i) => (
-              <div className="items" key={i}>
-                <div className="items-inner">
+              <div className={styles.items} key={i}>
+                <div className={styles["items-inner"]}>
                   <Image
                     src={item.image}
                     alt="photo"
                     width={500}
                     height={300}
                   />
-                  <div className="overlay">
-                    <div className="icons">
+                  <div className={styles.overlay}>
+                    <div className={styles.icons}>
                       <Link href={item.website}>
                         <i className="bi bi-eye-fill"></i>
                       </Link>
@@ -31,10 +32,10 @@ export default function Projects() {
                       </Link>
                     </div>
                   </div>
-                  <div className="details">
-                    <p className="title">{item.title}</p>
-                    <p className="description">{item.description}</p>
-                    <p className="techstack">
+                  <div className={styles.details}>
+                    <p className={styles.title}>{item.title}</p>
+                    <p className={styles.description}>{item.description}</p>
+                    <p className={styles.techstack}>
                       {item.techstack.map((stack, i2) => (
                         <span key={i2}>{stack}</span>
                       ))}
@@ -45,20 +46,20 @@ export default function Projects() {
             ))}
           </div>
         </div>
-        <div className="minor-projects">
-          <p className="title">Mini - Projects</p>
-          <div className="content">
+        <div className={styles["minor-projects"]}>
+          <p className={styles.title}>Mini - Projects</p>
+          <div className={styles.content}>
             {mini_projects.projects.map((item, i) => (
-              <div className="items" key={i}>
-                <div className="items-inner">
+              <div className={styles.items} key={i}>
+                <div className={styles["items-inner"]}>
                   <Image
                     src={item.image}
                     alt="photo"
                     width={500}
                     height={300}
                   />
-                  <div className="overlay">
-                  <div className="icons">
+                  <div className={styles.overlay}>
+                    <div className={styles.icons}>
                       <Link href={item.website}>
                         <i className="bi bi-eye-fill"></i>
                       </Link>
@@ -68,10 +69,10 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="details">
-                    <p className="title">{item.title}</p>
-                    <p className="description">{item.description}</p>
-                    <p className="techstack">
+                  <div className={styles.details}>
+                    <p className={styles.title}>{item.title}</p>
+                    <p className={styles.description}>{item.description}</p>
+                    <p className={styles.techstack}>
                       {item.techstack.map((stack, i2) => (
                         <span key={i2}>{stack}</span>
                       ))}

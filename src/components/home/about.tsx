@@ -1,20 +1,25 @@
 import Image from "next/image";
 import React from "react";
-// import profileImg from "/assets/images/profile-img.png";
+import styles from "@/styles/home.module.scss";
 
 export default function About() {
   return (
-    <section className="about">
-      <div className="heading">
-        <div className="heading-inner">About Me</div>
+    <section className={styles.about}>
+      <div className={styles.heading}>
+        <div className={styles["heading-inner"]}>About Me</div>
       </div>
-      <div className="content">
-        <div className="img">
-          <div className="img-inner">
-            <Image src='/assets/images/profile-img.png' alt="avatar" width={500} height={300} />
+      <div className={styles.content}>
+        <div className={styles.img}>
+          <div className={styles["img-inner"]}>
+            <Image
+              src="/assets/images/profile-img.png"
+              alt="avatar"
+              width={500}
+              height={300}
+            />
           </div>
         </div>
-        <div className="text">
+        <div className={styles.text}>
           <p>
             Hi! I&apos;m <span>Anusree Anilkumar</span>, a{" "}
             <span>Full-Stack Developer</span> exploring React, Node.js, Next.js,

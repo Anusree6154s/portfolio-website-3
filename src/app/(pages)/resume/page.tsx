@@ -45,7 +45,7 @@ export default function Resume() {
                     </Link>
                   </p>
                   <p>
-                    <i className="bi bi-envelope"></i>
+                    <i className="bi bi-telephone"></i>
                     <Link href="tel:9699973230">+91 9699973230</Link>
                   </p>
                 </div>

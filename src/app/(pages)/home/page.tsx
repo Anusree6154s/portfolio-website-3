@@ -1,14 +1,12 @@
-"use client";
-
 import Landing from "@/components/home/landing";
 import About from "@/components/home/about";
 import Projects from "@/components/home/projects";
 import TechStack from "@/components/home/techstack";
-import "@/styles/home.css";
+import styles from "@/styles/home.module.scss";
 
 export default function Home() {
   return (
-    <main id="home">
+    <main className={styles.home}>
       <Landing />
       <About />
       <TechStack />
