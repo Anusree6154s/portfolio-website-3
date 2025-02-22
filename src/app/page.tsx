@@ -1,7 +1,7 @@
 "use client";
 import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect } from "react";
-import "@/styles/welcome.css";
+import styles from "@/styles/welcome.module.scss";
 
 export default function Welcome() {
   const pathname = usePathname();
@@ -15,14 +15,14 @@ export default function Welcome() {
   }, []);
 
   return (
-    <div className={pathname === "/" ? "welcome" : "display-none"}>
-      <div className="welcome-inner">
-        <p className="first-name">Anusree</p>
-        <p className="last-name">Anilkumar</p>
-        {/* <p className="portfolio-text">Portfolio</p> */}
+    <div className={pathname === "/" ? styles.welcome : styles["display-none"]}>
+      <div className={styles["welcome-inner"]}>
+        <p className={styles["first-name"]}>Anusree</p>
+        <p className={styles["last-name"]}>Anilkumar</p>
+        {/* <p className={styles["portfolio-text"]}>Portfolio</p> */}
       </div>
-      <p className="portfolio-text">Portfolio</p>
-      <div className="bg-circle"></div>
+      <p className={styles["portfolio-text"]}>Portfolio</p>
+      <div className={styles["bg-circle"]}></div>
     </div>
   );
 }
