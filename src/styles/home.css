@@ -537,7 +537,7 @@ body {
 
 @keyframes slide-down {
   to {
-    transform: translate(0%, -40%);
+    transform: translate(0%, -60%);
   }
 }
 

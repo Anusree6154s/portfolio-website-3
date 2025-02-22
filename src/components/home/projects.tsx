@@ -40,7 +40,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src="/assets/images/ecommerce-app.png"
+                src="/assets/images/projects/ecommerce-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}
@@ -64,7 +64,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src="/assets/images/music-app.png"
+                src="/assets/images/projects/music-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}
@@ -89,7 +89,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src="/assets/images/movies-app.png"
+                src="/assets/images/projects/movies-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}
@@ -113,7 +113,7 @@ export default function Projects() {
           <div className="img">
             <div className="img-inner">
               <Image
-                src="/assets/images/blog-app.png"
+                src="/assets/images/projects/blog-app.png"
                 alt="Landscape picture"
                 layout="intrinsic"
                 width={500}

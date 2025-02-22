@@ -70,7 +70,7 @@
       "github": "https://github.com/Anusree6154s/qkart-frontend"
     },
     {
-      "image": "/assets/images/blog-app.png",
+      "image": "/assets/images/projects/blog-app.png",
       "title": "Personal Blog",
       "description": "Blog Application Frontend",
       "techstack": ["Jekyll", "SCSS", "Github Pages"],
