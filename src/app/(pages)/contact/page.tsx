@@ -1,17 +1,17 @@
 import React from "react";
-import "@/styles/contact.css";
+import styles from "@/styles/contact.module.scss";
 import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div id="contact">
-      <div className="contact-inner">
-        <div className="hardcoded">
-          <div className="title">
+    <div id="contact" className={styles.contact}>
+      <div className={styles["contact-inner"]}>
+        <div className={styles.hardcoded}>
+          <div className={styles.title}>
             <p>Looking to start a project? </p>
             <p>Feel free to contact me.</p>
           </div>
-          <div className="details">
+          <div className={styles.details}>
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,12 +74,12 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="form">
-          <div className="top">
+        <div className={styles.form}>
+          <div className={styles.top}>
             <input type="text" placeholder="Enter Name" />
             <input type="text" placeholder="Enter Email" />
           </div>
-          <textarea placeholder="Enter Message" className="message" />
+          <textarea placeholder="Enter Message" className={styles.message} />
           <button>Send</button>
         </div>
       </div>

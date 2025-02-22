@@ -2,7 +2,7 @@
 
 import Footer from "@/components/global/footer";
 import Navbar from "@/components/global/navbar";
-import "@/styles/globals.css";
+import "@/styles/global.scss";
 
 export default function PagesLayout({
   children,
