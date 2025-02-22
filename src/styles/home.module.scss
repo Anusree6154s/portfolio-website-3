@@ -210,7 +210,7 @@
           }
 
           &:nth-child(2) {
-            animation: slide-down 1ms linear both ;
+            animation: slide-down 1ms linear both;
             animation-timeline: view(y 50% 30%);
 
             @media (max-width: 780px) {
@@ -281,6 +281,10 @@
 
         @media (max-width: 350px) {
           font-size: 300%;
+        }
+
+        @media (max-width: 780px) {
+          animation: none;
         }
       }
     }
@@ -384,6 +388,10 @@
     .techstack-inner {
       animation: slide-down-far 0.2s linear forwards;
       animation-timeline: view(block 0 80%);
+
+      @media (max-width: 780px) {
+        animation: none;
+      }
     }
 
     .track {
@@ -490,6 +498,10 @@
             @media (max-width: 300px) {
               font-size: 300%;
             }
+            @media (max-width: 780px) {
+              animation: none;
+              transform: translate(0%, 0px);
+            }
           }
 
           &:nth-child(1) .heading-inner {
@@ -498,12 +510,6 @@
 
           &:nth-child(2) .heading-inner {
             animation-timeline: view(block 80% 10%);
-          }
-
-          @media (max-width: 780px) {
-            &:nth-child(2) .heading-inner {
-              animation-timeline: view(block 70% 10%);
-            }
           }
         }
       }
@@ -529,6 +535,11 @@
             transform: translate(0%, 200px);
             animation: slide-up 1ms linear both;
             animation-timeline: view(block 70% 10%);
+
+            @media (max-width: 780px) {
+              animation: none;
+              transform: translate(0%, 0px);
+            }
           }
         }
       }
@@ -558,6 +569,11 @@
         .techstack-inner {
           transform: translateY(100%);
           animation: slide-up 1ms linear both;
+
+          @media (max-width: 780px) {
+            animation: none;
+            transform: translateY(0%);
+          }
         }
 
         .title-inner {
@@ -570,6 +586,11 @@
           transform: translateY(30%);
           animation: slide-up 1ms linear both;
           animation-timeline: view(block 100% 10%);
+
+          @media (max-width: 780px) {
+            animation: none;
+            transform: translateY(5%);
+          }
         }
 
         .title {
