@@ -21,7 +21,7 @@ export default function Contact() {
             <p>
             <i className="bi bi-envelope"></i>
 
-              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=anilkumaranusree113@gmail.com">
+              <Link href="mailto:anilkumaranusree113@gmail.com">
                 anilkumaranusree113@gmail.com
               </Link>
             </p>

@@ -187,7 +187,11 @@
         animation-timeline: view(block 100px 10px);
 
         @media (max-width: 780px) {
-          animation: grow-full 5s linear both infinite alternate;
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fade-in 0.5s ease 2.6s forwards,
+            slide-up 0.5s ease 2.6s forwards,
+            grow-full 5s linear both infinite alternate;
         }
 
         display: flex;
@@ -488,12 +492,11 @@
         @media (max-width: 780px) {
           gap: 20px;
           flex-direction: row;
-          height: 60px;
+          height: max-content;
         }
 
         @media (max-width: 580px) {
           flex-direction: column;
-          height: 100px;
           align-items: center;
           line-height: 80%;
         }
