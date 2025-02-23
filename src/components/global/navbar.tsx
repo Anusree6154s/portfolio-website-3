@@ -50,10 +50,19 @@ export default function Navbar() {
       <div
         className="nav-drawer"
         style={{
-          height: isActive ? "200px" : "0px",
-          opacity: isActive ? "1" : "0",
+          transform: isActive ? "translateY(0%)" : "translateY(-100%)",
+          // opacity: isActive ? "1" : "0",
         }}
       >
+        <Link
+          className={`projects ${
+            pathname === "/home" ? "color-green" : ""
+          }`}
+          href="/home"
+          onClick={() => setIsActive(false)}
+        >
+          Home
+        </Link>
         <Link
           className={`projects ${
             pathname === "/projects" ? "color-green" : ""
@@ -65,7 +74,7 @@ export default function Navbar() {
         </Link>
         <Link
           className="blog"
-          href="https://anusree6154s.github.io/documentation/all-posts"
+          href="/blog"
           onClick={() => setIsActive(false)}
         >
           Blog
