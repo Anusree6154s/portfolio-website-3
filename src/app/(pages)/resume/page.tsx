@@ -87,7 +87,7 @@ export default function Resume() {
               </span>
               <Link
                 href="https://drive.google.com/file/d/1Y8_r1SKBmwClHUr-pszQpEmI3XLBEbTO/view?usp=sharing"
-                className="download"
+                className={styles.download}
               >
                 Download Resume
               </Link>
