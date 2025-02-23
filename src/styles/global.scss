@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin: 0px;
 }
 
 .custom-cursor {
@@ -44,6 +45,10 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1000;
   mix-blend-mode: difference;
+
+  @media (max-width: 780px) {
+    display: none;
+  }
 }
 
 .color-green {
@@ -145,7 +150,6 @@ nav {
     transition: height 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     * {
       padding: 10px;

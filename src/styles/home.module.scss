@@ -9,6 +9,10 @@
   background-color: white;
   position: relative;
 
+  @media (max-width: 780px) {
+    overflow-x: hidden;
+  }
+
   .landing {
     padding-top: 50px;
     height: 750px;
@@ -25,6 +29,14 @@
 
     @media (max-width: 660px) {
       height: 800px;
+    }
+
+    @media (max-width: 500px) {
+      height: 850px;
+    }
+
+    @media (max-width: 300px) {
+      height: 900px;
     }
 
     .heading {
@@ -165,16 +177,17 @@
     .projects-showcase {
       width: 100%;
       height: max-content;
-      /* position: absolute;
-      bottom: 0px;
-      transform: translate(0%, 100%); */
+
+      @media (max-width: 780px) {
+        background: linear-gradient(to top, black 50%, white 50%);
+      }
 
       .projects-showcase-inner {
         animation: grow 1ms linear both;
         animation-timeline: view(block 100px 10px);
 
         @media (max-width: 780px) {
-          animation: grow 5s linear both infinite alternate;
+          animation: grow-full 5s linear both infinite alternate;
         }
 
         display: flex;
@@ -259,6 +272,7 @@
 
     @media (max-width: 780px) {
       height: 750px;
+      margin-top: 0px;
     }
 
     @media (max-width: 660px) {
@@ -285,6 +299,7 @@
 
         @media (max-width: 780px) {
           animation: none;
+          transform: translate(0%, 0px);
         }
       }
     }
@@ -733,6 +748,16 @@
 
   to {
     transform: scaleX(1);
+  }
+}
+
+@keyframes grow-full {
+  from {
+    transform: scaleX(0.8);
+  }
+
+  to {
+    transform: scaleX(1.2);
   }
 }
 
