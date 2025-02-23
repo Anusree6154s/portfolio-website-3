@@ -33,6 +33,7 @@
     "Cypress",
     "Jest",
     "Puppeteer",
+    "Cheerio",
     "CORS",
     "Nodemailer"
   ]

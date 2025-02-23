@@ -21,7 +21,8 @@ export default function Navbar() {
         </Link>
         <Link
           className="blog"
-          href="https://anusree6154s.github.io/documentation/all-posts"
+          // href="https://anusree6154s.github.io/documentation/all-posts"
+          href="/blog"
         >
           Blog
         </Link>
