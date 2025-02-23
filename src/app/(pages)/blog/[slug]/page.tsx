@@ -14,7 +14,6 @@ export default function BlogPost() {
       const { data } = await axios.get(
         `https://anusree6154s.github.io/documentation/${slug}`
       );
-      console.log(data);
 
       const $ = cheerio.load(data);
 
@@ -29,28 +28,11 @@ export default function BlogPost() {
 
       const newData = $("main").html();
       setData(newData || "");
-
-      //   const lists: string[] = [];
-      //   $("a").each((_, el) => {
-      //     lists.push($(el).text().trim());
-      //   });
-
-      //   console.log("Blog Post Links:", lists);
-
-      //   const links: string[] = [];
-      //   $("a").each((_, el) => {
-      //     const href = $(el).attr("href");
-      //     console.log(href);
-      //     // links.push($(href).text());
-      //   });
-
-      //   console.log("Blog Post Links:", links);
-      //   console.log("Blog Post lists:", lists);
     }
 
     scrapeBlog();
   });
   return (
-      <div className="slug-post" dangerouslySetInnerHTML={{ __html: data }} />
+    <div className="slug-post" dangerouslySetInnerHTML={{ __html: data }} />
   );
 }

@@ -14,13 +14,13 @@ export default function Projects() {
     {
       name: "Music",
       techstack: ["React", "NodeJS", "Material UI"],
-      link: "https://github.com/Anusree6154s/qtify-frontend",
+      link: "https://qtify-ten-gamma.vercel.app/",
       image: "/assets/images/projects/music-app.png",
     },
     {
       name: "Movies",
-      techstack: ["React", "NodeJS", "MongoDB", "Tailwind CSS"],
-      link: "https://github.com/Anusree6154s/xflix-frontend",
+      techstack: ["React", "NodeJS", "MongoDB"],
+      link: "https://xflix-frontend-hazel.vercel.app/",
       image: "/assets/images/projects/movies-app.png",
     },
     {
@@ -78,6 +78,7 @@ export default function Projects() {
                 </Link>
               </div>
             </div>
+            <Link href={item.link} className={styles["view-button"]}>View Website</Link>
           </div>
         ))}
       </div>

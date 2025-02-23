@@ -438,7 +438,7 @@ footer {
   h5,
   h6,
   ul,
-  ol{
+  ol {
     all: revert;
   }
 
@@ -593,7 +593,7 @@ footer {
       }
 
       a {
-       color: #1ab2ff;
+        color: #1ab2ff;
       }
     }
   }
@@ -832,10 +832,21 @@ code {
   font-size: small !important;
   border-radius: 3px !important;
   font-weight: lighter !important;
+  // white-space: pre-wrap;
+}
+
+code {
+  word-break: break-word; /* Breaks long words */
+  white-space: pre-wrap; /* Wraps code content */
 }
 
 pre {
   padding: 15px !important;
+  white-space: pre-wrap; /* Wraps text instead of keeping it in one line */
+  word-wrap: break-word; /* Ensures long words break properly */
+  overflow-wrap: break-word; /* Helps break long words */
+  overflow-x: auto; /* Allows horizontal scrolling if necessary */
+  max-width: 100%; /* Prevents it from exceeding parent width */
 }
 
 @keyframes slide-up-initial {

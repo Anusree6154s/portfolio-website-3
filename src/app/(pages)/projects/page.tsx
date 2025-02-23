@@ -22,7 +22,7 @@ export default function Projects() {
                     width={500}
                     height={300}
                   />
-                  <div className={styles.overlay}>
+                  {/* <div className={styles.overlay}>
                     <div className={styles.icons}>
                       <Link href={item.website}>
                         <i className="bi bi-eye-fill"></i>
@@ -31,7 +31,7 @@ export default function Projects() {
                         <i className="bi bi-github"></i>
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
                   <div className={styles.details}>
                     <p className={styles.title}>{item.title}</p>
                     <p className={styles.description}>{item.description}</p>
@@ -40,7 +40,13 @@ export default function Projects() {
                         <span key={i2}>{stack}</span>
                       ))}
                     </p>
+                  
                   </div>
+
+                  <div className={styles.buttons}>
+                      <Link href={item.website}>View Website</Link>
+                      <Link href={item.github}>View Code</Link>
+                    </div>
                 </div>
               </div>
             ))}
@@ -58,7 +64,7 @@ export default function Projects() {
                     width={500}
                     height={300}
                   />
-                  <div className={styles.overlay}>
+                  {/* <div className={styles.overlay}>
                     <div className={styles.icons}>
                       <Link href={item.website}>
                         <i className="bi bi-eye-fill"></i>
@@ -67,7 +73,7 @@ export default function Projects() {
                         <i className="bi bi-github"></i>
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className={styles.details}>
                     <p className={styles.title}>{item.title}</p>
@@ -77,7 +83,13 @@ export default function Projects() {
                         <span key={i2}>{stack}</span>
                       ))}
                     </p>
+                   
                   </div>
+
+                  <div className={styles.buttons}>
+                      <Link href={item.website}>View Website</Link>
+                      <Link href={item.github}>View Code</Link>
+                    </div>
                 </div>
               </div>
             ))}
