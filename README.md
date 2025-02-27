@@ -1,5 +1,6 @@
 ## Portfolio Website
 
+<p align='center'><img src='https://github.com/user-attachments/assets/85233b13-a1f7-4c59-a6d2-31b4afd4d8c6' width=600/></p>
 
 **Techstack**: NextJS, SASS, Axios, Bootstrap, Cheerio, GoogleAPI, Modemailer, Notistack 
 
