@@ -78,7 +78,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { email, name, message } = body;
 
-    await sendEmail(email, name, message);
+    await sendEmail(email||"<no-email>", name||"<no-name>", message||"<no-message>");
     return Response.json({ data: "Mail Sent Successfully" });
   } catch (error: unknown) {
     console.error("Error in API:", error);
