@@ -11,6 +11,10 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "@/styles/resume.module.scss";
 
 export default function Resume() {
+
+
+
+  
   return (
     <div id="resume" className={styles.resume}>
       <div className={styles["resume-inner"]}>

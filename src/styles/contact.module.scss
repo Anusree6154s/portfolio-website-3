@@ -4,7 +4,6 @@
 @import url("https://fonts.cdnfonts.com/css/satoshi");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
 
-
 .contact {
   background-color: white;
   color: black;
@@ -103,6 +102,13 @@
         color: white;
         height: 40px;
         border-radius: 5px;
+
+        .sending-loader {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+        }
       }
     }
   }

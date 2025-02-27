@@ -21,10 +21,10 @@ export default function About() {
         </div>
         <div className={styles.text}>
           <p>
-            Hi! I&apos;m <span>Anusree Anilkumar</span>, a{" "}
+            Hi! I&apos;m <span>Anusree Anilkumar</span>, a
             <span>Full-Stack Developer</span> exploring React, Node.js, Next.js,
             and TypeScript, and constantly refining my craft. From building
-            <span> 6+ major projects</span> to experimenting with countless
+            <span> 5+ major projects</span> to experimenting with countless
             mini-projects, I believe every line of code teaches something new.
           </p>
           <p>
