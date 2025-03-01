@@ -4,7 +4,7 @@
 <br>
 
 ### **Techstack**: 
-NextJS, SASS, Axios, Bootstrap, Cheerio, GoogleAPI, Modemailer, Notistack 
+NextJS, SASS, Axios, Bootstrap, Cheerio, GoogleAPI, Nodemailer, Notistack 
 
 ### **Technical Choices**:
 1. NextJS: Fullstack Framework
