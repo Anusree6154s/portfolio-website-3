@@ -1,18 +1,8 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "@/styles/home.module.scss";
 export default function About() {
-  console.log(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => {
-      console.log(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+
   return (
     <section className={styles.about}>
       <div className={styles.heading}>
