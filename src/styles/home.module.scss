@@ -649,7 +649,7 @@
         .img-inner {
           transform: translateY(30%);
           animation: slide-up 1ms linear both;
-          animation-timeline: view(block 100% 10%);
+          animation-timeline: view(block 700px 10px);
 
           @media (max-width: 780px) {
             animation: none;
