@@ -61,8 +61,13 @@
         }
 
         a {
-          color: #1f67f1;
           overflow-wrap: anywhere;
+          span {
+            transition: color 0.5s ease,;
+          }
+          &:hover span {
+            color: #1f67f1;
+          }
         }
       }
     }

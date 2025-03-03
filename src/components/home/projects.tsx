@@ -54,6 +54,7 @@ export default function Projects() {
         </div>
         {featuredProjects.map((item, i) => (
           <div key={i} className={styles["project-items"]}>
+            <Link href={item.link} target="_blank" className={styles.link}/>
             <div className={styles.heading}>
               <div className={styles.title}>
                 <p className={styles["title-inner"]}>{item.name}</p>
@@ -78,7 +79,9 @@ export default function Projects() {
                 </Link>
               </div>
             </div>
-            <Link href={item.link} className={styles["view-button"]}>View Website</Link>
+            <Link href={item.link} className={styles["view-button"]}>
+              View Website
+            </Link>
           </div>
         ))}
       </div>

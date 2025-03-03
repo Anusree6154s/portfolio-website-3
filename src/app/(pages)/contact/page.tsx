@@ -9,7 +9,8 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleMail = async () => {
+  const handleMail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     setLoading(true);
     console.log("form:", form);
     try {
@@ -48,30 +49,32 @@ export default function Contact() {
             <p>Feel free to contact me.</p>
           </div>
           <div className={styles.details}>
-            <p>
+            <Link
+              href="https://www.google.com/maps/search/?api=1&query=Surat,India"
+              target="_blank"
+            >
               <i className="bi bi-geo-alt"></i>
 
               <span>Surat, Gujarat, India</span>
-            </p>
-            <p>
+            </Link>
+            <Link href="mailto:anilkumaranusree113@gmail.com">
               <i className="bi bi-envelope"></i>
 
-              <Link href="mailto:anilkumaranusree113@gmail.com">
-                anilkumaranusree113@gmail.com
-              </Link>
-            </p>
-            <p>
+              <span>anilkumaranusree113@gmail.com</span>
+            </Link>
+            <Link href="tel:9699973230">
               <i className="bi bi-telephone"></i>
-              <Link href="tel:9699973230">+91 9699973230</Link>
-            </p>
+              <span>+91 9699973230</span>
+            </Link>
           </div>
         </div>
-        <div className={styles.form}>
+        <form className={styles.form} onSubmit={handleMail}>
           <div className={styles.top}>
             <input
               type="text"
               placeholder="Enter Name"
               autoComplete="name"
+              required={true}
               value={form.name}
               onChange={(e) =>
                 setForm((prev) => ({ ...prev, name: e.target.value }))
@@ -82,6 +85,7 @@ export default function Contact() {
               autoComplete="email"
               placeholder="Enter Email"
               value={form.email}
+              required={true}
               onChange={(e) =>
                 setForm((prev) => ({ ...prev, email: e.target.value }))
               }
@@ -94,8 +98,9 @@ export default function Contact() {
             onChange={(e) =>
               setForm((prev) => ({ ...prev, message: e.target.value }))
             }
+            required={true}
           />
-          <button onClick={handleMail}>
+          <button  type="submit">
             {loading ? (
               <div className={styles["sending-loader"]}>
                 <LoadingSpinner />
@@ -105,7 +110,7 @@ export default function Contact() {
               "Send"
             )}
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );

@@ -139,11 +139,20 @@
             }
 
             .contact {
-              p {
+              a {
                 display: flex;
                 align-items: center;
                 gap: 5px;
                 flex-direction: row;
+                align-items: center;
+
+                span {
+                  transition: color 0.5s ease;
+                }
+
+                &:hover span {
+                  color: #1f67f1;
+                }
               }
               svg {
                 width: 10px;
@@ -167,6 +176,11 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  transition: color 0.5s ease;
+                  &:hover {
+                    color: white;
+                    background-color: rgb(42, 42, 42);
+                  }
                 }
               }
             }
@@ -247,6 +261,10 @@
             font-weight: 400;
             text-transform: none;
             border-radius: 50px;
+            transition: background-color 0.5s ease;
+            &:hover {
+              background-color: #1093d5;
+            }
           }
         }
 
@@ -389,7 +407,7 @@
                     height: max-content;
                   }
 
-                  .item-arrow {
+                  .item-arrow::before {
                     color: rgb(0, 166, 255);
                     transition: transform 0.5s ease;
                   }
@@ -398,7 +416,7 @@
               &:hover {
                 background-color: rgba(255, 255, 255, 0.1);
                 cursor: pointer;
-                .item-arrow {
+                .item-arrow::before {
                   transform: translate(10px, -10px);
                 }
               }
@@ -486,7 +504,7 @@
 
             .items {
               padding: 20px;
-              background-color: rgb(255, 255, 255, 0.04);
+
               border-radius: 5px;
 
               .items-inner {
@@ -546,6 +564,26 @@
                   }
                 }
               }
+            }
+          }
+        }
+
+        .extra-curricular .items {
+          background-color: rgb(255, 255, 255, 0.04);
+        }
+
+        .certification .items {
+          transition: background-color 0.5s ease;
+          .item-arrow::before {
+            color: rgb(0, 166, 255);
+            transition: transform 0.5s ease;
+          }
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            .item-arrow::before {
+              transform: translate(10px, -10px);
             }
           }
         }

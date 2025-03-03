@@ -11,10 +11,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "@/styles/resume.module.scss";
 
 export default function Resume() {
-
-
-
-  
   return (
     <div id="resume" className={styles.resume}>
       <div className={styles["resume-inner"]}>
@@ -37,21 +33,22 @@ export default function Resume() {
                 </div>
                 <div className={styles.contact}>
                   <p className={styles.title}>Contact</p>
-                  <p>
+                  <Link
+                    href="https://www.google.com/maps/search/?api=1&query=Surat,India"
+                    target="_blank"
+                  >
                     <i className="bi bi-geo-alt"></i>
-                    <span>Surat, Gujarat, India</span>
-                  </p>
-                  <p>
-                    <i className="bi bi-envelope"></i>
 
-                    <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=anilkumaranusree113@gmail.com">
-                      anilkumaranusree113@gmail.com
-                    </Link>
-                  </p>
-                  <p>
+                    <span>Surat, Gujarat, India</span>
+                  </Link>
+                  <Link href="mailto:anilkumaranusree113@gmail.com">
+                    <i className="bi bi-envelope"></i>
+                    <span>anilkumaranusree113@gmail.com</span>
+                  </Link>
+                  <Link href="tel:9699973230">
                     <i className="bi bi-telephone"></i>
-                    <Link href="tel:9699973230">+91 9699973230</Link>
-                  </p>
+                    <span>+91 9699973230</span>
+                  </Link>
                 </div>
                 <div className={styles.socials}>
                   <p className={styles.title}>Links</p>
@@ -194,7 +191,7 @@ export default function Resume() {
               <p className={styles.title}>Certifications</p>
               <div className={styles.content}>
                 {certificates.certificates.map((item, i3: number) => (
-                  <div className={styles.items} key={i3}>
+                  <Link href={item.url} target='_blank' className={styles.items} key={i3}>
                     <div className={styles["items-inner"]}>
                       <i
                         className={`bi bi-patch-check-fill ${styles.logo}`}
@@ -216,8 +213,13 @@ export default function Resume() {
                           </span>
                         </p>
                       </div>
+                      <div className={styles["item-arrow-container"]}>
+                        <i
+                          className={`bi bi-arrow-up-right ${styles["item-arrow"]}`}
+                        ></i>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

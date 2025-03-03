@@ -64,16 +64,6 @@ export default function Projects() {
                     width={500}
                     height={300}
                   />
-                  {/* <div className={styles.overlay}>
-                    <div className={styles.icons}>
-                      <Link href={item.website}>
-                        <i className="bi bi-eye-fill"></i>
-                      </Link>
-                      <Link href={item.github}>
-                        <i className="bi bi-github"></i>
-                      </Link>
-                    </div>
-                  </div> */}
 
                   <div className={styles.details}>
                     <p className={styles.title}>{item.title}</p>
