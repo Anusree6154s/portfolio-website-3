@@ -62,7 +62,6 @@
         font-family: "Clash Display";
         /* margin-bottom: 30%; */
 
-       
         @media (max-width: 660px) {
           gap: 20px;
         }
@@ -200,14 +199,6 @@
         animation: grow 1ms linear both;
         animation-timeline: view(block 200px 10px);
 
-        @media (max-width: 780px) {
-          opacity: 0;
-          transform: translateY(10px);
-          animation: fade-in 0.5s ease 2.6s forwards,
-            slide-up 0.5s ease 2.6s forwards,
-            grow-full 5s linear both infinite alternate;
-        }
-
         display: flex;
         height: 300px;
         background-color: #e91e63;
@@ -217,6 +208,14 @@
         padding: 0px 60px;
         border-radius: 50px;
         overflow: clip;
+
+        @media (max-width: 780px) {
+          border: 0px solid transparent;
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fade-in 0.5s ease 2.6s forwards,
+            slide-up 0.5s ease 2.6s forwards;
+        }
 
         @media (max-width: 500px) {
           padding: 0px;
@@ -295,11 +294,13 @@
 
     @media (max-width: 660px) {
       height: 850px;
+      padding: 12% 10%;
     }
 
     .heading {
       overflow: clip;
       .heading-inner {
+        text-align: center;
         font-size: 400%;
         font-family: "Clash Display";
         font-weight: 500;
@@ -335,6 +336,7 @@
 
       @media (max-width: 780px) {
         flex-direction: column;
+        padding: 0%;
       }
 
       .img {
@@ -480,17 +482,19 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width: 660px) {
+      padding: 10% 0%;
+    }
+
     .projects-inner {
       width: 60%;
       display: grid;
       gap: 40px;
       grid-template-columns: repeat(2, 1fr);
 
-      
       @media (min-width: 1000px) {
         width: 80%;
       }
-
 
       @media (max-width: 780px) {
         display: flex;
@@ -500,6 +504,7 @@
       }
 
       @media (max-width: 660px) {
+        width: 80%;
         gap: 60px;
       }
 

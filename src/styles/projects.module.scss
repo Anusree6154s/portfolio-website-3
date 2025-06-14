@@ -183,7 +183,6 @@
             margin-top: auto;
             justify-self: end;
 
-            
             * {
               padding: 10px 20px;
               text-align: center;
@@ -193,10 +192,16 @@
               background-color: rgba(255, 255, 255, 0.1);
               color: white;
               transition: color 0.5s ease, background-color 0.5s ease;
-              
+
               @media (min-width: 1024px) and (max-width: 1440px) {
                 font-size: 80%;
                 white-space: nowrap;
+              }
+
+              @media (max-width: 700px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
               }
 
               &:hover {

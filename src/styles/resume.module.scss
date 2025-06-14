@@ -331,6 +331,10 @@
             flex-direction: column;
             gap: 10px;
 
+            @media (max-width: 500px) {
+              font-size: 20px;
+            }
+
             img {
               width: 100px;
               height: 100px;
@@ -340,6 +344,11 @@
               padding: 20px;
               transition: background-color 0.5s ease;
               border-radius: 5px;
+
+              @media (max-width: 500px) {
+                background-color: rgb(255, 255, 255, 0.04);
+                border-radius: 5px;
+              }
 
               .items-inner {
                 display: flex;
@@ -378,6 +387,10 @@
                   .item-techstack {
                     font-size: 70%;
                     color: rgba(255, 255, 255, 0.7);
+
+                    @media (max-width: 500px) {
+                      font-size: 80%;
+                    }
                   }
 
                   .item-techstack {
@@ -390,6 +403,9 @@
                       padding: 2px 5px;
                       border-radius: 50px;
                       background-color: rgba(255, 255, 255, 0.1);
+                      @media (max-width: 500px) {
+                        padding: 5px 10px;
+                      }
                     }
                   }
                 }
@@ -410,6 +426,9 @@
                   .item-arrow::before {
                     color: rgb(0, 166, 255);
                     transition: transform 0.5s ease;
+                    @media (max-width: 500px) {
+                      display: none;
+                    }
                   }
                 }
               }
@@ -442,10 +461,6 @@
             .content-inner {
               display: flex;
               gap: 20px;
-
-              @media (max-width: 500px) {
-                flex-direction: column;
-              }
 
               .logo {
                 border-radius: 50px;
@@ -480,6 +495,10 @@
                     }
                   }
                 }
+              }
+
+              @media (max-width: 500px) {
+                flex-direction: column;
               }
             }
           }
@@ -574,9 +593,18 @@
 
         .certification .items {
           transition: background-color 0.5s ease;
+
+          @media screen and (max-width: 500px) {
+            background-color: rgb(255, 255, 255, 0.04);
+            border-radius: 5px;
+          }
+
           .item-arrow::before {
             color: rgb(0, 166, 255);
             transition: transform 0.5s ease;
+            @media screen and (max-width: 500px) {
+              display: none;
+            }
           }
 
           &:hover {
