@@ -117,6 +117,14 @@
       "techstack": ["HTML", "CSS"],
       "website": "https://xcruise-buildout-crio.netlify.app/",
       "github": "https://github.com/Anusree6154s/xcruise"
+    },
+    {
+      "image": "/assets/images/mini-projects/xprofile.png",
+      "title": "XProfile",
+      "description": "A Responsive Virtual Profile Card",
+      "techstack": ["HTML", "CSS"],
+      "website": "https://fe-buildout-xprofile.vercel.app/",
+      "github": "https://github.com/Anusree6154s/xprofile"
     }
   ]
 }
