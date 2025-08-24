@@ -108,7 +108,7 @@
       "description": "News Application Frontend",
       "techstack": ["HTML", "CSS", "Bootstrap", "Javascript", "Figma"],
       "website": "https://xboard-buildout-crio.netlify.app/",
-      "github": "https://gitlab.crio.do/COHORT_ME_BUILDOUT_XBOARD_ENROLL_1714374400644/anilkumaranusree113-ME_BUILDOUT_XBOARD"
+      "github": "https://github.com/Anusree6154s/xboard"
     },
     {
       "image": "/assets/images/mini-projects/xcruise.png",
@@ -116,7 +116,7 @@
       "description": "Cruise Booking Application Frontend",
       "techstack": ["HTML", "CSS"],
       "website": "https://xcruise-buildout-crio.netlify.app/",
-      "github": "https://gitlab.crio.do/COHORT_ME_FE_BUILDOUT_XCRUISE_ENROLL_1709031360235/anilkumaranusree113-ME_FE_BUILDOUT_XCRUISE"
+      "github": "https://github.com/Anusree6154s/xcruise"
     }
   ]
 }
