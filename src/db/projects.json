@@ -44,7 +44,7 @@
         "JWT",
         "Jest"
       ],
-      "website": "https://qkart-backend-2-jlz8.onrender.com/v1/swagger/docs",
+      "website": "https://crio-qkart-backend.vercel.app/v1/swagger/docs",
       "github": "https://github.com/Anusree6154s/qkart-backend"
     },
     {
@@ -65,7 +65,7 @@
       "image": "/assets/images/projects/ecommerce-app.png",
       "title": "QKart Frontend",
       "description": "E-Commerce Platform Frontend",
-      "techstack": ["React.js", "Material UI", "REST APIs", "Render", "Vercel"],
+      "techstack": ["React.js", "Material UI", "REST APIs", "Vercel"],
       "website": "https://qkart-frontend-01.vercel.app/",
       "github": "https://github.com/Anusree6154s/qkart-frontend"
     },
