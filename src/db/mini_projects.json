@@ -99,8 +99,8 @@
       "title": "Qtrip Static",
       "description": "Trip Booking Application Frontend",
       "techstack": ["HTML", "CSS", "Bootstrap"],
-      "website": "https://anilkumaranusree113-me-qtripstatic-lsnral4u2.vercel.app/",
-      "github": "https://gitlab.crio.do/COHORT_ME_QTRIPSTATIC_ENROLL_1711533245835/anilkumaranusree113-ME_QTRIPSTATIC"
+      "website": "https://qtrip-static-muc.vercel.app/",
+      "github": "https://github.com/Anusree6154s/qtrip-frontend"
     },
     {
       "image": "/assets/images/mini-projects/xboard.png",
