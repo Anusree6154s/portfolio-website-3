@@ -40,13 +40,12 @@ export default function Projects() {
                         <span key={i2}>{stack}</span>
                       ))}
                     </p>
-                  
                   </div>
 
                   <div className={styles.buttons}>
-                      <Link href={item.website}>View Website</Link>
-                      <Link href={item.github}>View Code</Link>
-                    </div>
+                    <Link href={item.website} target="_blank" rel="noopener">View Website</Link>
+                    <Link href={item.github} target="_blank" rel="noopener">View Code</Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -73,13 +72,16 @@ export default function Projects() {
                         <span key={i2}>{stack}</span>
                       ))}
                     </p>
-                   
                   </div>
 
                   <div className={styles.buttons}>
-                      <Link href={item.website}>View Website</Link>
-                      <Link href={item.github}>View Code</Link>
-                    </div>
+                    <Link href={item.website} target="_blank" rel="noopener">
+                      View Website
+                    </Link>
+                    <Link href={item.github} target="_blank" rel="noopener">
+                      View Code
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
