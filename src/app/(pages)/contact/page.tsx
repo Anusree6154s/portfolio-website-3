@@ -12,7 +12,6 @@ export default function Contact() {
   const handleMail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    console.log("form:", form);
     try {
       const response = await fetch("/api/sendMail", {
         method: "POST",
@@ -22,7 +21,6 @@ export default function Contact() {
 
       const data = await response.json();
       if (response.ok) {
-        console.log(data);
         enqueueSnackbar(data.data, { variant: "success" });
         setLoading(false);
         setForm({ name: "", email: "", message: "" });

@@ -31,7 +31,30 @@ export default function BlogPost() {
     }
 
     scrapeBlog();
-  });
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      async function fetchVisitorCount() {
+        try {
+          const response = await axios.post(
+            process.env.NEXT_PUBLIC_BACKEND_URL ?? "",
+            { url: window.location.href }
+          );
+          const count = response.data.count;
+
+          const el = document.getElementById("visitor-count");
+          if (el) {
+            el.textContent = count;
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      }
+      fetchVisitorCount();
+    }
+  }, [data]);
+
   return (
     <div className="slug-post" dangerouslySetInnerHTML={{ __html: data }} />
   );

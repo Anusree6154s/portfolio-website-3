@@ -55,7 +55,6 @@ async function sendEmail(
 ): Promise<void> {
   try {
     const transporter = await createTransporter();
-    console.log(senders_gmail, senders_name, message);
     const mailOptions = {
       from: RECEIVERS_GMAIL,
       to: RECEIVERS_GMAIL,
@@ -72,8 +71,6 @@ async function sendEmail(
 }
 
 export async function POST(request: Request) {
-  console.log("request received yay!");
-  // console.log("request received!", req.method);
   try {
     const body = await request.json();
     const { email, name, message } = body;
