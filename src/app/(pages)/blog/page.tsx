@@ -10,7 +10,7 @@ export default function Blog() {
   useEffect(() => {
     async function scrapeBlog() {
       const { data } = await axios.get(
-        "https://anusree6154s.github.io/documentation/all-posts"
+        "https://anusree6154s.github.io/bits-and-bytes/all-posts"
       );
 
       const $ = cheerio.load(data);
@@ -24,7 +24,6 @@ export default function Blog() {
 
       const newData = $(".list").html();
       setData(newData || "");
-
     }
 
     scrapeBlog();

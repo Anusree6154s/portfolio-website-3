@@ -21,7 +21,7 @@ export default function Navbar() {
         </Link>
         <Link
           className="blog"
-          // href="https://anusree6154s.github.io/documentation/all-posts"
+          // href="https://anusree6154s.github.io/bits-and-bytes/all-posts"
           href="/blog"
         >
           Blog
@@ -55,9 +55,7 @@ export default function Navbar() {
         }}
       >
         <Link
-          className={`projects ${
-            pathname === "/home" ? "color-green" : ""
-          }`}
+          className={`projects ${pathname === "/home" ? "color-green" : ""}`}
           href="/home"
           onClick={() => setIsActive(false)}
         >
@@ -72,11 +70,7 @@ export default function Navbar() {
         >
           Projects
         </Link>
-        <Link
-          className="blog"
-          href="/blog"
-          onClick={() => setIsActive(false)}
-        >
+        <Link className="blog" href="/blog" onClick={() => setIsActive(false)}>
           Blog
         </Link>
 

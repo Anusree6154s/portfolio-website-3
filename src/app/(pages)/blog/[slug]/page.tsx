@@ -12,7 +12,7 @@ export default function BlogPost() {
   useEffect(() => {
     async function scrapeBlog() {
       const { data } = await axios.get(
-        `https://anusree6154s.github.io/documentation/${slug}`
+        `https://anusree6154s.github.io/bits-and-bytes/${slug}`
       );
 
       const $ = cheerio.load(data);
@@ -21,8 +21,8 @@ export default function BlogPost() {
         const href = $(el).attr("href");
         if (href && href.startsWith("./")) {
           $(el).attr("href", href.replace("./", "/blog/"));
-        } else if (href && href.startsWith("/documentation/")) {
-          $(el).attr("href", href.replace("/documentation/", "/blog/"));
+        } else if (href && href.startsWith("/bits-and-bytes/")) {
+          $(el).attr("href", href.replace("/bits-and-bytes/", "/blog/"));
         }
       });
 

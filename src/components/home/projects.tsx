@@ -26,7 +26,7 @@ export default function Projects() {
     {
       name: "Blog",
       techstack: ["Jekyll", "SCSS", "Github Pages"],
-      link: "https://anusree6154s.github.io/documentation/",
+      link: "https://anusree6154s.github.io/bits-and-bytes/",
       image: "/assets/images/projects/blog-app.png",
     },
   ];
@@ -54,7 +54,7 @@ export default function Projects() {
         </div>
         {featuredProjects.map((item, i) => (
           <div key={i} className={styles["project-items"]}>
-            <Link href={item.link} target="_blank" className={styles.link}/>
+            <Link href={item.link} target="_blank" className={styles.link} />
             <div className={styles.heading}>
               <div className={styles.title}>
                 <p className={styles["title-inner"]}>{item.name}</p>
