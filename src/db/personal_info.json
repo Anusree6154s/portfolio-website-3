@@ -1,0 +1,18 @@
+{
+  "contact": {
+    "location": {
+      "text": "Surat, Gujarat, India",
+      "url": "https://www.google.com/maps/search/?api=1&query=Surat,India"
+    },
+    "number": { "text": "+91 9081952964", "url": "tel:9081952964" },
+    "email": {
+      "text": "anilkumaranusree113@gmail.com",
+      "url": "mailto:anilkumaranusree113@gmail.com"
+    }
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/anusreeanilkumar1/",
+    "github": "https://github.com/Anusree6154s",
+    "twitter": "https://x.com/anu6154s"
+  }
+}

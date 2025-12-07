@@ -4,6 +4,7 @@ import styles from "@/styles/contact.module.scss";
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
+import { contact } from "@/db/personal_info.json";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -47,22 +48,19 @@ export default function Contact() {
             <p>Feel free to contact me.</p>
           </div>
           <div className={styles.details}>
-            <Link
-              href="https://www.google.com/maps/search/?api=1&query=Surat,India"
-              target="_blank"
-            >
+            <Link href={contact.location.url} target="_blank">
               <i className="bi bi-geo-alt"></i>
 
-              <span>Surat, Gujarat, India</span>
+              <span>{contact.location.text}</span>
             </Link>
-            <Link href="mailto:anilkumaranusree113@gmail.com">
+            <Link href={contact.email.url}>
               <i className="bi bi-envelope"></i>
 
-              <span>anilkumaranusree113@gmail.com</span>
+              <span>{contact.email.text}</span>
             </Link>
-            <Link href="tel:9699973230">
+            <Link href={contact.number.url}>
               <i className="bi bi-telephone"></i>
-              <span>+91 9699973230</span>
+              <span>{contact.number.text}</span>
             </Link>
           </div>
         </div>
@@ -98,7 +96,7 @@ export default function Contact() {
             }
             required={true}
           />
-          <button  type="submit">
+          <button type="submit">
             {loading ? (
               <div className={styles["sending-loader"]}>
                 <LoadingSpinner />

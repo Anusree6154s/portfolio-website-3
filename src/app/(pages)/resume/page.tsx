@@ -9,6 +9,7 @@ import extra_curricular from "@/db/extra_curricular.json";
 const profileImg = "/assets/images/profile-img-2.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "@/styles/resume.module.scss";
+import { contact, socials } from "@/db/personal_info.json";
 
 export default function Resume() {
   return (
@@ -33,33 +34,30 @@ export default function Resume() {
                 </div>
                 <div className={styles.contact}>
                   <p className={styles.title}>Contact</p>
-                  <Link
-                    href="https://www.google.com/maps/search/?api=1&query=Surat,India"
-                    target="_blank"
-                  >
+                  <Link href={contact.location.url} target="_blank">
                     <i className="bi bi-geo-alt"></i>
 
-                    <span>Surat, Gujarat, India</span>
+                    <span>{contact.location.text}</span>
                   </Link>
-                  <Link href="mailto:anilkumaranusree113@gmail.com">
+                  <Link href={contact.email.url}>
                     <i className="bi bi-envelope"></i>
-                    <span>anilkumaranusree113@gmail.com</span>
+                    <span>{contact.email.text}</span>
                   </Link>
-                  <Link href="tel:9699973230">
+                  <Link href={contact.number.url}>
                     <i className="bi bi-telephone"></i>
-                    <span>+91 9699973230</span>
+                    <span>{contact.number.text}</span>
                   </Link>
                 </div>
                 <div className={styles.socials}>
                   <p className={styles.title}>Links</p>
                   <div className={styles.content}>
-                    <Link href="https://www.linkedin.com/in/anusreeanilkumar1/">
+                    <Link href={socials.linkedin}>
                       <i className="bi bi-linkedin"></i>
                     </Link>
-                    <Link href="https://github.com/Anusree6154s">
+                    <Link href={socials.github}>
                       <i className="bi bi-github"></i>
                     </Link>
-                    <Link href="https://x.com/anu6154s">
+                    <Link href={socials.twitter}>
                       <i className="bi bi-twitter-x"></i>
                     </Link>
                   </div>
@@ -191,7 +189,12 @@ export default function Resume() {
               <p className={styles.title}>Certifications</p>
               <div className={styles.content}>
                 {certificates.certificates.map((item, i3: number) => (
-                  <Link href={item.url} target='_blank' className={styles.items} key={i3}>
+                  <Link
+                    href={item.url}
+                    target="_blank"
+                    className={styles.items}
+                    key={i3}
+                  >
                     <div className={styles["items-inner"]}>
                       <i
                         className={`bi bi-patch-check-fill ${styles.logo}`}
