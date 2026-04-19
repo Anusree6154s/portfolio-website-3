@@ -7,11 +7,17 @@ export default function Welcome() {
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => {
+    document.body.style.overflow = "hidden";
+
+    const timer = setTimeout(() => {
       router.push("/home");
     }, 2500);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = "auto";
+    };
+  }, [router]);
 
   return (
     <div className={styles.welcome}>
