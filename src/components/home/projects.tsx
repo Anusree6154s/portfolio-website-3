@@ -46,9 +46,7 @@ export default function Projects() {
         <div className={styles["description-wrapper"]}>
           <div className={styles.description}>
             <div className={styles["description-inner"]}>
-              A collection of projects where ideas take shape through
-              code—crafted with curiosity, creativity, and a drive to build
-              something new.
+             A collection of projects where ideas are explored through code, built to sharpen skills, experiment with different stacks, and create cleaner, better systems along the way.
             </div>
           </div>
         </div>

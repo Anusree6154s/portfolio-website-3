@@ -22,7 +22,7 @@ export default function About() {
         <div className={styles.text}>
           <p>
             Hi! I&apos;m <span>Anusree Anilkumar</span>, a
-            <span>Full-Stack Developer</span> exploring React, Node.js, Next.js,
+            <span> Full-Stack Developer</span> exploring React, Node.js, Next.js,
             and TypeScript, and constantly refining my craft. From building
             <span> 5+ major projects</span> to experimenting with countless
             mini-projects, I believe every line of code teaches something new.
@@ -30,8 +30,7 @@ export default function About() {
           <p>
             Right now, I&apos;m focused on mastering the technical side, but my
             goal is to build apps with better performance, design, and
-            scalability. The journey of learning never stops—there&apos;s always
-            room to grow, innovate, and improve.
+            scalability.
           </p>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Landing() {
             </p>
           </div>
           <div className={styles["sub-title"]}>
-            {["Code", "Build", "Deploy", "Repeat"].map((item, i) => (
+            {["Design", "Code", "Deploy", "Repeat"].map((item, i) => (
               <div className={styles["sub-title-inner-1"]} key={i}>
                 <span className={styles["sub-title-inner-2"]}>
                   {item} <span className={styles.dot}>•</span>
@@ -26,8 +26,7 @@ export default function Landing() {
           </div>
         </div>
         <div className={styles["tag-line"]}>
-          Turning concepts into reality with seamless, optimized solutions,
-          designed to fit your needs.
+          Turning ideas into reliable products through thoughtful design, clean code, and scalable execution
         </div>
       </div>
 
