@@ -303,7 +303,7 @@ footer {
   font-family: "Clash Display";
   min-height: 100vh;
 
-  * {
+  *:not(.content) {
     animation:
       fade-in-initial 0.5s ease,
       slide-up-initial 0.5s ease;
@@ -363,6 +363,13 @@ footer {
       }
     }
 
+    .date {
+      font-size: 80%;
+      @media (max-width: 1300px) {
+        font-size: 120%;
+      }
+    }
+
     .content {
       display: flex;
       align-items: center;
@@ -397,10 +404,23 @@ footer {
 
       .title {
         color: white;
-        font-size: large;
+        font-size: x-large;
 
-        @media (min-width: 1300px) {
+        @media (max-width: 1450px) {
+          font-size: 100%;
+        }
+        @media (max-width: 1300px) {
           font-size: 150%;
+        }
+      }
+
+      .excerpt {
+        font-size: 120%;
+        @media (max-width: 1450px) {
+          font-size: 90%;
+        }
+        @media (max-width: 1300px) {
+          font-size: 140%;
         }
       }
 
@@ -419,9 +439,11 @@ footer {
         color: #ffffff51;
         font-size: small;
         white-space: nowrap;
-
-        @media (min-width: 1300px) {
+        @media (max-width: 1450px) {
           font-size: 100%;
+        }
+        @media (max-width: 1300px) {
+          font-size: 120%;
         }
       }
     }
@@ -526,6 +548,7 @@ footer {
           font-size: small;
           border-radius: 2px;
           background: #ffffff0d;
+          font-size: 110%;
         }
       }
     }
@@ -540,6 +563,31 @@ footer {
       color: rgba(255, 255, 255, 0.7);
       font-family: "Satoshi";
 
+      font-size: 120%;
+
+      p {
+        margin: 10px 0px;
+      }
+
+      h1 {
+        font-size: 180%;
+      }
+      h2 {
+        font-size: 170%;
+      }
+      h3 {
+        font-size: 160%;
+      }
+      h4 {
+        font-size: 150%;
+      }
+      h5 {
+        font-size: 140%;
+      }
+      h6 {
+        font-size: 130%;
+      }
+
       h1,
       h2,
       h3,
@@ -547,6 +595,13 @@ footer {
       h5,
       h6 {
         color: #009595;
+        margin: 0px;
+        margin-top: 40px;
+      }
+
+      ul {
+        margin: 0px;
+        margin-top: 10px;
       }
 
       table {
@@ -554,13 +609,16 @@ footer {
 
         th {
           background-color: #f0f0f00a !important;
-          border: 1px solid #e8e8e832 !important;
+          border: 2px solid #e8e8e832 !important;
           border-bottom-color: #c9c9c98c !important;
-          color: #ffffff82;
+          color: #ffffffd7;
+          padding: 5px;
         }
 
         td {
-          border: 1px solid #e8e8e832;
+          border: 2px solid #e8e8e832;
+          padding: 5px;
+          color: #ffffffbd;
         }
       }
 
@@ -580,12 +638,11 @@ footer {
       blockquote {
         color: #ffffffba;
         border-left: 1px solid #e8e8e8bb;
-        font-size: small;
-        letter-spacing: -1px;
         background: #ffffff0f;
         border-radius: 0px 5px 5px 0px;
         width: max-content;
-        padding: 2%;
+        padding: 1%;
+        margin: 1% 0%;
         font-style: normal;
         font-family: "Figtree";
       }
@@ -850,6 +907,7 @@ code {
 code {
   word-break: break-word; /* Breaks long words */
   white-space: pre-wrap; /* Wraps code content */
+  font-size: 13px !important;
 }
 
 pre {
