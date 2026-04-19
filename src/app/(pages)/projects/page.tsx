@@ -11,7 +11,7 @@ export default function Projects() {
     <div className={styles.projects}>
       <div className={styles["projects-inner"]}>
         <div className={styles["major-projects"]}>
-          <p className={styles.title}>Projects</p>
+          <p className={styles.title}>Major</p>
           <div className={styles.content}>
             {projects.projects.map((item, i) => (
               <div className={styles.items} key={i}>
@@ -52,7 +52,7 @@ export default function Projects() {
           </div>
         </div>
         <div className={styles["minor-projects"]}>
-          <p className={styles.title}>Mini - Projects</p>
+          <p className={styles.title}>Minor</p>
           <div className={styles.content}>
             {mini_projects.projects.map((item, i) => (
               <div className={styles.items} key={i}>
