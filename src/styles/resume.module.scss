@@ -17,7 +17,9 @@
   }
 
   * {
-    animation: slide-up-initial 1s ease, fade-in-initial 1s ease;
+    animation:
+      slide-up-initial 1s ease,
+      fade-in-initial 1s ease;
   }
 
   .resume-inner {
@@ -98,10 +100,10 @@
           .details {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 16px;
 
             .name {
-              font-size: 120%;
+              font-size: 150%;
               font-weight: bold;
               text-align: center;
               margin-top: -10px;
@@ -124,11 +126,13 @@
             }
 
             .languages {
+              font-size: 120%;
               .content {
                 display: flex;
                 gap: 10px;
                 flex-direction: row;
                 color: #353535;
+                font-size: 90%;
 
                 * {
                   border: 1px solid grey;
@@ -139,6 +143,7 @@
             }
 
             .contact {
+              font-size: 120%;
               a {
                 display: flex;
                 align-items: center;
@@ -147,6 +152,7 @@
                 align-items: center;
 
                 span {
+                  font-size: 90%;
                   transition: color 0.5s ease;
                 }
 
@@ -161,6 +167,7 @@
             }
 
             .socials {
+              font-size: 120%;
               .content {
                 display: flex;
                 flex-direction: row;
@@ -169,14 +176,19 @@
                 color: #353535;
 
                 a {
-                  width: 20px;
-                  height: 20px;
+                  width: 30px;
+                  height: 30px;
                   border: 1px solid grey;
                   border-radius: 20px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
                   transition: color 0.5s ease;
+
+                  i {
+                    font-size: 13px;
+                  }
+
                   &:hover {
                     color: white;
                     background-color: rgb(42, 42, 42);
@@ -241,7 +253,7 @@
 
           .quote {
             text-transform: none;
-            font-size: 30%;
+            font-size: 36%;
             color: gray;
             font-weight: 300;
             display: flex;
@@ -257,7 +269,7 @@
           .download {
             background-color: #0773a8;
             padding: 5px 10px;
-            font-size: 30%;
+            font-size: 35%;
             font-weight: 400;
             text-transform: none;
             border-radius: 50px;
@@ -290,8 +302,12 @@
                 gap: 10px;
               }
 
+              .category-name {
+                font-size: 115%;
+              }
+
               .category-items {
-                font-size: 80%;
+                font-size: 90%;
                 display: flex;
                 gap: 3px;
                 flex-wrap: wrap;
@@ -353,7 +369,6 @@
               .items-inner {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
                 gap: 10px;
 
                 @media (max-width: 1000px) {
@@ -381,11 +396,17 @@
                   @media (max-width: 500px) {
                     order: 3;
                     align-self: flex-start;
+                    font-size: 80%;
+                    font-weight: 500;
+                  }
+
+                  .item-title {
+                    font-size: 130%;
                   }
 
                   .item-description,
                   .item-techstack {
-                    font-size: 70%;
+                    font-weight: 200;
                     color: rgba(255, 255, 255, 0.7);
 
                     @media (max-width: 500px) {
@@ -394,13 +415,14 @@
                   }
 
                   .item-techstack {
+                    font-weight: 200;
                     display: flex;
                     gap: 5px;
                     flex-wrap: wrap;
 
                     span {
                       font-size: 80%;
-                      padding: 2px 5px;
+                      padding: 2px 8px;
                       border-radius: 50px;
                       background-color: rgba(255, 255, 255, 0.1);
                       @media (max-width: 500px) {
@@ -412,10 +434,7 @@
 
                 .item-arrow-container {
                   height: 80px;
-
-                  @media (max-width: 1000px) {
-                    margin-left: auto;
-                  }
+                  margin-left: auto;
 
                   @media (max-width: 500px) {
                     order: 1;
@@ -470,6 +489,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                &:before {
+                  font-size: 20px;
+                }
               }
 
               .details {
@@ -477,6 +500,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                font-size: 120%;
 
                 .description {
                   display: flex;
@@ -523,7 +547,6 @@
 
             .items {
               padding: 20px;
-
               border-radius: 5px;
 
               .items-inner {
@@ -537,11 +560,15 @@
                 .logo {
                   border-radius: 50px;
                   height: 40px;
-                  width: 40px;
+                  width: 45px;
                   background-color: #0773a8;
                   display: flex;
                   align-items: center;
                   justify-content: center;
+
+                  &:before {
+                    font-size: 17px;
+                  }
                 }
 
                 .details {
@@ -549,6 +576,7 @@
                   display: flex;
                   flex-direction: column;
                   gap: 10px;
+                  font-size: 120%;
 
                   .description {
                     display: flex;
@@ -573,6 +601,7 @@
                       flex-direction: row;
                       flex-wrap: wrap;
                       margin-top: 10px;
+                      font-size: 120%;
                       * {
                         font-size: 80%;
                         padding: 3px 10px;

@@ -1,8 +1,9 @@
 "use client";
-import Link from "next/link";
-import React, { useState } from "react";
-import { usePathname } from "next/navigation";
+import { scrollToTopSlow } from "@/app/utils/scroll-to-top";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -26,7 +27,14 @@ export default function Navbar() {
         >
           Blog
         </Link>
-        <Link href="/home#" className="name" onClick={() => setIsActive(false)}>
+        <Link
+          href="/home"
+          className="name"
+          onClick={() => {
+            setIsActive(false);
+            scrollToTopSlow();
+          }}
+        >
           <p className="first-name">Anusree</p>
           <p className="portfolio-text">Portfolio</p>
         </Link>

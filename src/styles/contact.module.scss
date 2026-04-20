@@ -18,13 +18,16 @@
   font-family: "Satoshi";
 
   * {
-    animation: slide-up-initial 1s ease, fade-in 1s ease;
+    animation:
+      slide-up-initial 1s ease,
+      fade-in 1s ease;
   }
 
   .contact-inner {
-    width: 80%;
+    width: 70%;
 
     display: flex;
+    justify-content: space-between;
     gap: 80px;
 
     @media (max-width: 1000px) {
@@ -38,7 +41,7 @@
       gap: 40px;
 
       .title {
-        font-size: 150%;
+        font-size: 170%;
         display: flex;
         flex-direction: column;
       }
@@ -48,6 +51,7 @@
         flex-direction: column;
         gap: 10px;
         color: rgba(0, 0, 0, 0.6);
+        font-size: 120%;
 
         * {
           display: flex;
@@ -63,7 +67,7 @@
         a {
           overflow-wrap: anywhere;
           span {
-            transition: color 0.5s ease,;
+            transition: color 0.5s ease;
           }
           &:hover span {
             color: #1f67f1;
@@ -93,10 +97,15 @@
       input,
       textarea {
         padding: 10px;
-        color: #9c9c9c;
+        color: black;
         background-color: #f0f0f0;
         outline: none;
         border-radius: 5px;
+        font-size: 120%;
+
+        &::placeholder {
+          color: #9c9c9c;
+        }
       }
       .message {
         height: 150px;
@@ -107,6 +116,7 @@
         color: white;
         height: 40px;
         border-radius: 5px;
+        font-size: 120%;
 
         .sending-loader {
           display: flex;

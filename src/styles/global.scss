@@ -33,7 +33,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   scrollbar-width: thin;
   cursor: default;
   display: flex;
@@ -219,6 +219,10 @@ footer {
 
     @media (max-width: 660px) {
       order: 1;
+    }
+
+    .tooltip {
+      text-transform: lowercase;
     }
 
     .title {

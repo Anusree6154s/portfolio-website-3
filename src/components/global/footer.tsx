@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
 import { contact, socials } from "@/db/personal_info.json";
+import { scrollToTopSlow } from "@/app/utils/scroll-to-top";
+import Link from "next/link";
+import Tooltip from "@/components/global/tooltip";
 
 export default function Footer() {
-  // const [isMounted, setIsMounted] = useState(false);
-
-  // // Only run this after hydration is complete
-  // useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
 
   return (
     <footer>
@@ -16,24 +13,25 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="contact">
           <div className="list">
-            <a title={contact.number.text} href={contact.number.url}>
-              Phone
-            </a>
-            <a title={contact.email.text} href={contact.email.url}>
-              Email
-            </a>
+            <Tooltip text={contact.number.text}>
+              <Link href={contact.number.url}>Phone</Link>
+            </Tooltip>
+
+            <Tooltip text={contact.email.text}>
+              <Link href={contact.email.url}>Email</Link>
+            </Tooltip>
           </div>
         </div>
-        <a href="#" className="brand">
+        <Link href="/home" className="brand" onClick={scrollToTopSlow}>
           <p className="first-name">Anusree</p>
           <p className="portfolio">Portfolio</p>
           <p className="last-name">Anilkumar</p>
-        </a>
+        </Link>
         <div className="socials">
           <div className="list">
-            <a href={socials.linkedin}>Linkedin</a>
-            <a href={socials.twitter}>Twitter</a>
-            <a href={socials.github}>Github</a>
+            <Link href={socials.linkedin}>Linkedin</Link>
+            <Link href={socials.twitter}>Twitter</Link>
+            <Link href={socials.github}>Github</Link>
           </div>
         </div>
       </div>
